@@ -8,3 +8,4 @@ url: https://quantumchunks.github.io
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
 math: katex
+color_scheme: chunks
