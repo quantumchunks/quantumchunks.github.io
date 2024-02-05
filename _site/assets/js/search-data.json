@@ -70,11 +70,11 @@
     "relUrl": "/condmat/"
   },"10": {
     "doc": "Home",
-    "title": "What",
-    "content": "Some Math . \\[E = \\langle H \\rangle_\\psi\\] . ",
-    "url": "/#what",
+    "title": "Learn Quantum Computing on your own",
+    "content": " ",
+    "url": "/#learn-quantum-computing-on-your-own",
     
-    "relUrl": "/#what"
+    "relUrl": "/#learn-quantum-computing-on-your-own"
   },"11": {
     "doc": "Home",
     "title": "Home",

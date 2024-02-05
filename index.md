@@ -4,16 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# What 
+# Learn **Quantum Computing** on your own
 
-Some Math
 
-$$
-E = \langle H \rangle_\psi
-$$
 
-----
-
-[^1]: [ref]().
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
