@@ -1,7 +1,84 @@
 {"0": {
+    "doc": "Quantum Algorithms",
+    "title": "Quantum Algorithms",
+    "content": " ",
+    "url": "/qcomputing/qalgorithm/",
+    
+    "relUrl": "/qcomputing/qalgorithm/"
+  },"1": {
+    "doc": "Basic Mathematics",
+    "title": "Qubit",
+    "content": "A qubit is represented by a two-dimensional complex vector usually denoted by \\(|\\psi\\rangle\\). Historically \\(\\psi\\) is used as the wavefunction of a quantum particle like an electron or any other object that behaves quantum mechanically. ",
+    "url": "/qcomputing/basics/#qubit",
+    
+    "relUrl": "/qcomputing/basics/#qubit"
+  },"2": {
+    "doc": "Basic Mathematics",
+    "title": "Ket and Bra",
+    "content": "The \\(|\\rangle\\) is called a ket introduced by Paul Dirac. It’s a way of distinguishing a column vector \\(|v\\rangle\\) (ket) from its dual row vector \\(\\langle v|\\) (called bra). The state of the qubit, \\(|\\psi\\rangle\\), can be explicitly written as a two component column vector . \\[|\\psi\\rangle = \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix}\\] where \\(c_1\\) and \\(c_2\\) are complex numbers. The qubit can also be represented by its dual row vector . \\[\\langle\\psi| = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix}\\] These two representation are considered equal. ",
+    "url": "/qcomputing/basics/#ket-and-bra",
+    
+    "relUrl": "/qcomputing/basics/#ket-and-bra"
+  },"3": {
+    "doc": "Basic Mathematics",
+    "title": "Inner product and normalization",
+    "content": "Now, the elements of the state vector \\(c_1\\) and \\(c_2\\) cannot be any numbers as they are limited by the normalization condition. It is a postulate of quantum mechanics that the state of a qubit is normalized which means the magnitude of the state vector is unity. By definition the magnitude (or norm) of a complex vector \\(\\|\\psi\\|\\) is equal to the square root of its inner product with its dual row vector. \\[\\|\\psi\\| = \\sqrt{\\langle \\psi | \\cdot | \\psi \\rangle}\\] The inner product \\(\\langle \\psi | \\cdot | \\psi \\rangle\\) is often abbreviated as \\(\\langle \\psi | \\psi \\rangle\\). It is worth mentioning that the inner product is always defined between a bra and a ket. Hence, called bracket. We can write the inner product explicitly in terms of \\(c_1\\) and \\(c_2\\) . \\[\\langle \\psi | \\psi \\rangle = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix} \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix} = |c_1|^2 + |c_2|^2.\\] Again, the normalization dictates that \\(\\sqrt{\\langle\\psi|\\psi\\rangle}=1\\). In other words . \\[\\sqrt{|c_1|^2 + |c_2|^2} = 1.\\] ",
+    "url": "/qcomputing/basics/#inner-product-and-normalization",
+    
+    "relUrl": "/qcomputing/basics/#inner-product-and-normalization"
+  },"4": {
+    "doc": "Basic Mathematics",
+    "title": "Rays",
+    "content": " ",
+    "url": "/qcomputing/basics/#rays",
+    
+    "relUrl": "/qcomputing/basics/#rays"
+  },"5": {
+    "doc": "Basic Mathematics",
+    "title": "Single Qubit Gates",
+    "content": "Gates are operations that change the state of qubits. That is what quantum computing means. You compute by applying gates on your qubits. ",
+    "url": "/qcomputing/basics/#single-qubit-gates",
+    
+    "relUrl": "/qcomputing/basics/#single-qubit-gates"
+  },"6": {
+    "doc": "Basic Mathematics",
+    "title": "Multiple Qubits",
+    "content": "The . ",
+    "url": "/qcomputing/basics/#multiple-qubits",
+    
+    "relUrl": "/qcomputing/basics/#multiple-qubits"
+  },"7": {
+    "doc": "Basic Mathematics",
+    "title": "Basic Mathematics",
+    "content": "Here you will learn the mathematics of representing quantum information and quantum computing operations. ",
+    "url": "/qcomputing/basics/",
+    
+    "relUrl": "/qcomputing/basics/"
+  },"8": {
+    "doc": "Quantum Computing",
+    "title": "Quantum Computing",
+    "content": " ",
+    "url": "/qcomputing/",
+    
+    "relUrl": "/qcomputing/"
+  },"9": {
+    "doc": "Condensed Matter",
+    "title": "Condensed Matter",
+    "content": " ",
+    "url": "/condmat/",
+    
+    "relUrl": "/condmat/"
+  },"10": {
+    "doc": "Home",
+    "title": "What",
+    "content": "Some Math . \\[E = \\langle H \\rangle_\\psi\\] . ",
+    "url": "/#what",
+    
+    "relUrl": "/#what"
+  },"11": {
     "doc": "Home",
     "title": "Home",
-    "content": "This is a bare-minimum template to create a Jekyll site that uses the Just the Docs theme. You can easily set the created site to be published on GitHub Pages – the README file explains how to do that, along with other details. If Jekyll is installed on your computer, you can also build and preview the created site locally. This lets you test changes before committing them, and avoids waiting for GitHub Pages.1 And you will be able to deploy your local build to a different platform than GitHub Pages. More specifically, the created site: . | uses a gem-based approach, i.e. uses a Gemfile and loads the just-the-docs gem | uses the GitHub Pages / Actions workflow to build and publish the site on GitHub Pages | . Other than that, you’re free to customize sites that you create with this template, however you like. You can easily change the versions of just-the-docs and Jekyll it uses, as well as adding further plugins. Browse our documentation to learn more about how to use this theme. To get started with creating a site, simply: . | click “use this template” to create a GitHub repository | go to Settings &gt; Pages &gt; Build and deployment &gt; Source, and select GitHub Actions | . If you want to maintain your docs in the docs directory of an existing project repo, see Hosting your docs from an existing project repo in the template README. | It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub. &#8617; . | . ",
+    "content": " ",
     "url": "/",
     
     "relUrl": "/"
