@@ -7555,7 +7555,7 @@ div.opaque {
 }
 
 .side-bar {
-  background-color: rgba(242, 194, 49, 0.1333333333);
+  background-color: #f2c231;
 }
 
 .site-title {
@@ -7563,19 +7563,28 @@ div.opaque {
 }
 
 .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
-  background-image: linear-gradient(-90deg, rgba(242, 194, 49, 0.6666666667) 100%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
+  background-image: linear-gradient(-90deg, rgba(56, 118, 29, 0.2666666667) 100%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
 }
 
 .nav-list .nav-list-item .nav-list-expander:hover {
-  background-image: linear-gradient(-90deg, rgba(242, 194, 49, 0.6666666667) 100%, rgba(235, 237, 245, 0.8) 100%);
+  background-image: linear-gradient(-90deg, rgba(56, 118, 29, 0.2666666667) 100%, rgba(235, 237, 245, 0.8) 100%);
 }
 
 .site-title:hover {
-  background-image: linear-gradient(-90deg, #f2c231 100%, rgba(242, 194, 49, 0.6666666667) 0%);
+  background-image: linear-gradient(-90deg, #38761d 100%, #f2c231 0%);
+  color: #ffffff;
 }
 
 .search-result:hover, .search-result.active {
-  background-color: rgba(242, 194, 49, 0.1333333333);
+  background-color: rgba(242, 194, 49, 0.2666666667);
+}
+
+.site-header {
+  border-bottom: 1px solid rgba(56, 118, 29, 0.4666666667);
+}
+
+.site-button:hover {
+  background-image: linear-gradient(-90deg, #f2c231 100%, rgba(235, 237, 245, 0.8) 0%);
 }
 
 /*# sourceMappingURL=just-the-docs-dark.css.map */
