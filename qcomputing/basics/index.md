@@ -34,7 +34,7 @@ c_2^*
 \end{pmatrix}
 $$
 
-These two representation are considered equal.  
+These two representations are considered equal.  
 
 ## Inner product and normalization 
 Now, the elements of the state vector $$c_1$$ and $$c_2$$ cannot be any numbers as they are limited by the *normalization* condition. 
