@@ -1,142 +1,177 @@
 {"0": {
-    "doc": "Complex Numbers",
-    "title": "Complex Numbers",
-    "content": "This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. Historically, complex numbers were used in quantum mechanics to represent the wavefunction of a quantum object like electrons. In quantum computing, complex numbers are used to specify the states of qubits. You usually need more than one complex number to specify all the state of a quantum object or a quantum computer. ",
-    "url": "/math/complex/",
-    
-    "relUrl": "/math/complex/"
-  },"1": {
-    "doc": "Complex Numbers",
-    "title": "What is a complex number",
-    "content": "A complex number is a special ordered set of two real numbers. It is usually represented by \\(c\\) or \\(z\\). For example \\(c = (1, -2)\\) is a complex number and is different from \\(c' = (-2, 1)\\) which is another complex number. The order matters. ",
-    "url": "/math/complex/#what-is-a-complex-number",
-    
-    "relUrl": "/math/complex/#what-is-a-complex-number"
-  },"2": {
-    "doc": "Complex Numbers",
-    "title": "Real-imaginary representation",
-    "content": "A complex number, \\(z = (a, b)\\), can also be represented by . \\[z = a + ib\\] where \\(a\\) is called the real part, \\(ib\\) is called the imaginary part, and \\(i\\) is the imaginary unit. The imaginary unit has a specific definition that is \\(i = \\sqrt{-1}\\). As you know, negative numbers do not have any real roots. That is why \\(i\\) is called imaginary. Now the product of a real number \\(b\\) and the imaginary unit will be an imaginary number. That is why \\(ib\\) is imaginary. ",
-    "url": "/math/complex/#real-imaginary-representation",
-    
-    "relUrl": "/math/complex/#real-imaginary-representation"
-  },"3": {
-    "doc": "Complex Numbers",
-    "title": "Rules of manipulation",
-    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. You just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Negation . The negative of a complex number is obtained by negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Multiplication . ",
-    "url": "/math/complex/#rules-of-manipulation",
-    
-    "relUrl": "/math/complex/#rules-of-manipulation"
-  },"4": {
-    "doc": "Mathematics",
-    "title": "Mathematics",
-    "content": "All the mathematics that you will need in quantum computing are covered in here. ",
-    "url": "/math/",
-    
-    "relUrl": "/math/"
-  },"5": {
-    "doc": "Quantum Algorithms",
-    "title": "Quantum Algorithms",
-    "content": " ",
-    "url": "/qcomputing/qalgorithm/",
-    
-    "relUrl": "/qcomputing/qalgorithm/"
-  },"6": {
-    "doc": "Basic Mathematics",
-    "title": "Qubit",
-    "content": "A qubit is represented by a two-dimensional complex vector usually denoted by \\(|\\psi\\rangle\\). Historically \\(\\psi\\) is used as the wavefunction of a quantum particle like an electron or any other object that behaves quantum mechanically. ",
-    "url": "/qcomputing/basics/#qubit",
-    
-    "relUrl": "/qcomputing/basics/#qubit"
-  },"7": {
-    "doc": "Basic Mathematics",
-    "title": "Ket and Bra",
-    "content": "The \\(|\\rangle\\) is called a ket introduced by Paul Dirac. It’s a way of distinguishing a column vector \\(|v\\rangle\\) (ket) from its dual row vector \\(\\langle v|\\) (called bra). The state of the qubit, \\(|\\psi\\rangle\\), can be explicitly written as a two component column vector . \\[|\\psi\\rangle = \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix}\\] where \\(c_1\\) and \\(c_2\\) are complex numbers. The qubit can also be represented by its dual row vector . \\[\\langle\\psi| = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix}\\] These two representations are considered equal. ",
-    "url": "/qcomputing/basics/#ket-and-bra",
-    
-    "relUrl": "/qcomputing/basics/#ket-and-bra"
-  },"8": {
-    "doc": "Basic Mathematics",
-    "title": "Inner product and normalization",
-    "content": "Now, the elements of the state vector \\(c_1\\) and \\(c_2\\) cannot be any numbers as they are limited by the normalization condition. It is a postulate of quantum mechanics that the state of a qubit is normalized which means the magnitude of the state vector is unity. By definition the magnitude (or norm) of a complex vector \\(\\|\\psi\\|\\) is equal to the square root of its inner product with its dual row vector. \\[\\|\\psi\\| = \\sqrt{\\langle \\psi | \\cdot | \\psi \\rangle}\\] The inner product \\(\\langle \\psi | \\cdot | \\psi \\rangle\\) is often abbreviated as \\(\\langle \\psi | \\psi \\rangle\\). It is worth mentioning that the inner product is always defined between a bra and a ket. Hence, called bracket. We can write the inner product explicitly in terms of \\(c_1\\) and \\(c_2\\) . \\[\\langle \\psi | \\psi \\rangle = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix} \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix} = |c_1|^2 + |c_2|^2.\\] Again, the normalization dictates that \\(\\sqrt{\\langle\\psi|\\psi\\rangle}=1\\). In other words . \\[\\sqrt{|c_1|^2 + |c_2|^2} = 1.\\] ",
-    "url": "/qcomputing/basics/#inner-product-and-normalization",
-    
-    "relUrl": "/qcomputing/basics/#inner-product-and-normalization"
-  },"9": {
-    "doc": "Basic Mathematics",
-    "title": "Rays",
-    "content": " ",
-    "url": "/qcomputing/basics/#rays",
-    
-    "relUrl": "/qcomputing/basics/#rays"
-  },"10": {
-    "doc": "Basic Mathematics",
-    "title": "Single Qubit Gates",
-    "content": "Gates are operations that change the state of qubits. That is what quantum computing means. You compute by applying gates on your qubits. ",
-    "url": "/qcomputing/basics/#single-qubit-gates",
-    
-    "relUrl": "/qcomputing/basics/#single-qubit-gates"
-  },"11": {
-    "doc": "Basic Mathematics",
-    "title": "Multiple Qubits",
-    "content": "The . ",
-    "url": "/qcomputing/basics/#multiple-qubits",
-    
-    "relUrl": "/qcomputing/basics/#multiple-qubits"
-  },"12": {
-    "doc": "Basic Mathematics",
-    "title": "Basic Mathematics",
-    "content": "Here you will learn the mathematics of representing quantum information and quantum computing operations. ",
-    "url": "/qcomputing/basics/",
-    
-    "relUrl": "/qcomputing/basics/"
-  },"13": {
-    "doc": "Quantum Computing",
-    "title": "Quantum Computing",
-    "content": " ",
-    "url": "/qcomputing/",
-    
-    "relUrl": "/qcomputing/"
-  },"14": {
-    "doc": "Condensed Matter",
-    "title": "Condensed Matter",
-    "content": " ",
-    "url": "/condmat/",
-    
-    "relUrl": "/condmat/"
-  },"15": {
     "doc": "Home",
     "title": "Learn Quantum Computing on your own",
-    "content": "What one fool can understand, another can. Feynman . ",
+    "content": "What one fool can understand, another can. -Feynman . ",
     "url": "/#learn-quantum-computing-on-your-own",
     
     "relUrl": "/#learn-quantum-computing-on-your-own"
-  },"16": {
+  },"1": {
     "doc": "Home",
     "title": "Can I learn quantum computing?",
-    "content": "Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can’t learn it now in this century. With the right mathematical toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you’re in high school you can learn quantum computing. You just need the right mathematics. Basics of Complex numbers, linear algebra (matrices and vectors), and probability theory are enough to get started. The more mathematics you know the easier it gets. ",
+    "content": "Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can’t learn it now in this century. With the right math toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you’re in high school you can learn quantum computing. You just need the right mathematics. Basics of Complex numbers, linear algebra (matrices and vectors), and probability theory are enough to get started. The more mathematics you know the easier it gets. ",
     "url": "/#can-i-learn-quantum-computing",
     
     "relUrl": "/#can-i-learn-quantum-computing"
-  },"17": {
+  },"2": {
     "doc": "Home",
     "title": "Where to start",
     "content": "If you are at high school level or early college, you should start with the mathematics. I have made the mathematics as concise as possible. Learn the basics of complex numbers, linear algebra, and probability theory and then move on to the quantum computing section. Otherwise, if you are already familiar with the above three math subjects, you can just go ahead to the quantum computing section. Study the sections sequentially. You would not want to skip the initial sections as the concepts are used in later sections where the more specific topics are discussed. ",
     "url": "/#where-to-start",
     
     "relUrl": "/#where-to-start"
-  },"18": {
+  },"3": {
     "doc": "Home",
     "title": "Practice, Practice, Practice!",
     "content": "Just like a craftsman, you get better by doing it. Doing physics or math involves solving problems on your own with pen and paper. Mere Reading won’t do the trick, it would just create a mirage of understanding. There are selected problems at the end of each page. Try to solve them before jumping to the solutions. ",
     "url": "/#practice-practice-practice",
     
     "relUrl": "/#practice-practice-practice"
-  },"19": {
+  },"4": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
+  },"5": {
+    "doc": "Complex Numbers",
+    "title": "Complex Numbers",
+    "content": "This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. Historically, complex numbers were used in quantum mechanics to represent the wavefunction of a quantum object like electrons. In quantum computing, complex numbers are used to specify the states of qubits. You usually need more than one complex number to specify all the state of a quantum object or a quantum computer. ",
+    "url": "/math/complex/",
+    
+    "relUrl": "/math/complex/"
+  },"6": {
+    "doc": "Complex Numbers",
+    "title": "What is a complex number",
+    "content": "A complex number is a special ordered set of two real numbers. It is usually represented by \\(c\\) or \\(z\\). For example \\(c = (1, -2)\\) is a complex number and is different from \\(c' = (-2, 1)\\) which is another complex number. The order matters. 1 . ",
+    "url": "/math/complex/#what-is-a-complex-number",
+    
+    "relUrl": "/math/complex/#what-is-a-complex-number"
+  },"7": {
+    "doc": "Complex Numbers",
+    "title": "Real-imaginary representation",
+    "content": "A complex number, \\(z = (a, b)\\), can also be represented by . \\[z = a + ib\\] where \\(a\\) is called the real part, \\(ib\\) is called the imaginary part, and \\(i\\) is the imaginary unit. The imaginary unit has a specific definition that is \\(i = \\sqrt{-1}\\). As you know, negative numbers do not have any real roots. That is why \\(i\\) is called imaginary. Now the product of a real number \\(b\\) and the imaginary unit will be an imaginary number. That is why \\(ib\\) is imaginary. ",
+    "url": "/math/complex/#real-imaginary-representation",
+    
+    "relUrl": "/math/complex/#real-imaginary-representation"
+  },"8": {
+    "doc": "Complex Numbers",
+    "title": "Rules of manipulation",
+    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. You just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Negation . The negative of a complex number is obtained by negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Multiplication . We can actually figure out the rules of multiplication on our own if we use the real-imaginary representation. Assume we have two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). Let’s multiply these two numbers the same way we do for unknown variables in normal algebra, that is . \\[z_1 z_2 = (a + ib)(c + id) = ac + iad + ibc + i^2bd\\] From the definition of imaginary unit \\(i = \\sqrt{-1}\\) you can see that \\(i^2\\) is simply equal to \\(-1\\) which is a real number! Now let’s bundle up the real parts together and the imaginary parts together and come up with a more compact expression for multiplication . \\[z_1 z_2 = (ac - bd) + i(ad + bc)\\] Conjugation . Conjugation is a fancy name for when you negate the imaginary part of a complex number, that is you multiply the imaginary part by \\(-1\\). To show that a complex number is conjugated you would add an asterisk on the top right corner of the symbol. \\[z = a + ib \\rightarrow z^* = a - ib\\] As a result, if you conjugate a complex number twice you will get the original number . \\[(z^*)^* = z\\] Scalar multiplication . ",
+    "url": "/math/complex/#rules-of-manipulation",
+    
+    "relUrl": "/math/complex/#rules-of-manipulation"
+  },"9": {
+    "doc": "Complex Numbers",
+    "title": "Absolute Value",
+    "content": " ",
+    "url": "/math/complex/#absolute-value",
+    
+    "relUrl": "/math/complex/#absolute-value"
+  },"10": {
+    "doc": "Complex Numbers",
+    "title": "Practice Problems",
+    "content": "1. Division: Figure out the expression for dividing two complex numbers. Solutions . ",
+    "url": "/math/complex/#practice-problems",
+    
+    "relUrl": "/math/complex/#practice-problems"
+  },"11": {
+    "doc": "Complex Numbers",
+    "title": "Footnote",
+    "content": ". | It might be tempting to think of a complex number as a vector and we will do that in later sections. However, they are not any ordinary vectors. For example the rules of multiplication are different for complex numbers from what you have seen with normal vectors in linear algebra. &#8617; . | . ",
+    "url": "/math/complex/#footnote",
+    
+    "relUrl": "/math/complex/#footnote"
+  },"12": {
+    "doc": "Mathematics",
+    "title": "Mathematics",
+    "content": "All the mathematics that you will need in quantum computing are covered in here. ",
+    "url": "/math/",
+    
+    "relUrl": "/math/"
+  },"13": {
+    "doc": "Quantum Algorithms",
+    "title": "Quantum Algorithms",
+    "content": " ",
+    "url": "/qcomputing/qalgorithm/",
+    
+    "relUrl": "/qcomputing/qalgorithm/"
+  },"14": {
+    "doc": "Qubit",
+    "title": "Qubit",
+    "content": "A qubit is represented by a two-dimensional complex vector usually denoted by \\(|\\psi\\rangle\\). Historically \\(\\psi\\) is used as the wavefunction of a quantum particle like an electron or any other object that behaves quantum mechanically. ",
+    "url": "/qcomputing/qubit/#qubit",
+    
+    "relUrl": "/qcomputing/qubit/#qubit"
+  },"15": {
+    "doc": "Qubit",
+    "title": "Ket and Bra",
+    "content": "The \\(|\\rangle\\) is called a ket introduced by Paul Dirac. It’s a way of distinguishing a column vector \\(|v\\rangle\\) (ket) from its dual row vector \\(\\langle v|\\) (called bra). The state of the qubit, \\(|\\psi\\rangle\\), can be explicitly written as a two component column vector . \\[|\\psi\\rangle = \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix}\\] where \\(c_1\\) and \\(c_2\\) are complex numbers. The qubit can also be represented by its dual row vector . \\[\\langle\\psi| = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix}\\] These two representations are considered equal. ",
+    "url": "/qcomputing/qubit/#ket-and-bra",
+    
+    "relUrl": "/qcomputing/qubit/#ket-and-bra"
+  },"16": {
+    "doc": "Qubit",
+    "title": "Inner product and normalization",
+    "content": "Now, the elements of the state vector \\(c_1\\) and \\(c_2\\) cannot be any numbers as they are limited by the normalization condition. It is a postulate of quantum mechanics that the state of a qubit is normalized which means the magnitude of the state vector is unity. By definition the magnitude (or norm) of a complex vector \\(\\|\\psi\\|\\) is equal to the square root of its inner product with its dual row vector. \\[\\|\\psi\\| = \\sqrt{\\langle \\psi | \\cdot | \\psi \\rangle}\\] The inner product \\(\\langle \\psi | \\cdot | \\psi \\rangle\\) is often abbreviated as \\(\\langle \\psi | \\psi \\rangle\\). It is worth mentioning that the inner product is always defined between a bra and a ket. Hence, called bracket. We can write the inner product explicitly in terms of \\(c_1\\) and \\(c_2\\) . \\[\\langle \\psi | \\psi \\rangle = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix} \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix} = |c_1|^2 + |c_2|^2.\\] Again, the normalization dictates that \\(\\sqrt{\\langle\\psi|\\psi\\rangle}=1\\). In other words . \\[\\sqrt{|c_1|^2 + |c_2|^2} = 1.\\] ",
+    "url": "/qcomputing/qubit/#inner-product-and-normalization",
+    
+    "relUrl": "/qcomputing/qubit/#inner-product-and-normalization"
+  },"17": {
+    "doc": "Qubit",
+    "title": "Rays",
+    "content": "Let’s assume we have a qubit at a specific state \\(\\) . ",
+    "url": "/qcomputing/qubit/#rays",
+    
+    "relUrl": "/qcomputing/qubit/#rays"
+  },"18": {
+    "doc": "Qubit",
+    "title": "Single Qubit Gates",
+    "content": "Gates are operations that change the state of qubits. That is what quantum computing means. You compute by applying gates on your qubits. ",
+    "url": "/qcomputing/qubit/#single-qubit-gates",
+    
+    "relUrl": "/qcomputing/qubit/#single-qubit-gates"
+  },"19": {
+    "doc": "Qubit",
+    "title": "Multiple Qubits",
+    "content": "The . ",
+    "url": "/qcomputing/qubit/#multiple-qubits",
+    
+    "relUrl": "/qcomputing/qubit/#multiple-qubits"
+  },"20": {
+    "doc": "Qubit",
+    "title": "Qubit",
+    "content": "Here you will learn the mathematics of representing quantum information and quantum computing operations. ",
+    "url": "/qcomputing/qubit/",
+    
+    "relUrl": "/qcomputing/qubit/"
+  },"21": {
+    "doc": "Quantum Computing",
+    "title": "Quantum Computing",
+    "content": " ",
+    "url": "/qcomputing/",
+    
+    "relUrl": "/qcomputing/"
+  },"22": {
+    "doc": "Condensed Matter",
+    "title": "Condensed Matter",
+    "content": " ",
+    "url": "/condmat/",
+    
+    "relUrl": "/condmat/"
+  },"23": {
+    "doc": "Complex Numbers Solution",
+    "title": "Solutions to Complex Numbers",
+    "content": "1. Division: Figure out the expression for dividing two complex numbers. Assume two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). We want to figure out how to divide \\(z_1\\) by \\(z_2\\). First, we multiply both with \\(z_2^*\\). That won’t change the ratio . \\[\\frac{z_1}{z_2} = \\frac{z_1z_2^*}{z_2z_2^*}.\\] Notice that the denominator is just a real number \\(z_2z_2^* = |z_2|^2 = c^2 + d^2\\). So dividing by \\(|z_2|^2\\) is just like a scalar multiplication by \\(1/|z_2|^2\\). Therefore, we just need to calculate \\(z_1z_2^*\\). \\[z_1z_2^* = (ac + bd) + i(-ad + bc)\\] Finally, rescaling this by \\(1/(c^2 + d^2)\\) leads us to the final expression for division . \\[\\frac{z_1}{z_2} = \\frac{1}{c^2 + d^2} [(ac + bd) + i(-ad + bc)]\\] ",
+    "url": "/math/complex/sol.html#solutions-to-complex-numbers",
+    
+    "relUrl": "/math/complex/sol.html#solutions-to-complex-numbers"
+  },"24": {
+    "doc": "Complex Numbers Solution",
+    "title": "Complex Numbers Solution",
+    "content": " ",
+    "url": "/math/complex/sol.html",
+    
+    "relUrl": "/math/complex/sol.html"
   }
 }

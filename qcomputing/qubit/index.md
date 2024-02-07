@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Basic Mathematics
+title: Qubit
 parent: Quantum Computing
 has_children: false
+nav_order: 1
 ---
 
 Here you will learn the mathematics of representing quantum information and quantum computing operations. 
@@ -70,6 +71,7 @@ $$
 $$
 
 ## Rays 
+Let's assume we have a qubit at a specific state $$$$
 
 # Single Qubit Gates
 Gates are operations that change the state of qubits. That is what quantum *computing* means. You *compute* by applying gates on your qubits. 

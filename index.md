@@ -7,10 +7,10 @@ nav_order: 1
 # Learn **Quantum Computing** on your own
 
 What one fool can understand, another can.  
-_Feynman_
+-_Feynman_
 
 ## Can I learn quantum computing? 
-Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can't learn it now in this century. With the right mathematical toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you're in high school you can learn quantum computing. You just need the right mathematics. Basics of **Complex numbers, linear algebra (matrices and vectors), and probability theory** are enough to get started. The more mathematics you know the easier it gets. 
+Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can't learn it now in this century. With the right math toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you're in high school you can learn quantum computing. You just need the right mathematics. Basics of **Complex numbers, linear algebra (matrices and vectors), and probability theory** are enough to get started. The more mathematics you know the easier it gets. 
 
 ## Where to start
 If you are at **high school level or early college**, you should start with the [mathematics](/math). I have made the mathematics as concise as possible. Learn the basics of complex numbers, linear algebra, and probability theory and then move on to the [quantum computing](/qcomputing) section.  

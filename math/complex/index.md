@@ -16,7 +16,7 @@ You usually need more than one complex number to specify all the state of a quan
 A complex number is a special ordered set of two real numbers. 
 It is usually represented by $$c$$ or $$z$$. 
 For example $$c = (1, -2)$$ is a complex number and is different from $$c' = (-2, 1)$$ which is another complex number. 
-The order matters.  
+The order matters. [^1]  
 
 ## Real-imaginary representation
 A complex number, $$z = (a, b)$$, can also be represented by 
@@ -54,4 +54,45 @@ z_1 - z_2 = (a - c) + i(b - d)
 $$
 
 ### Multiplication 
+We can actually figure out the rules of multiplication on our own if we use the real-imaginary representation. 
+Assume we have two complex numbers $$z_1 = a + ib$$ and $$z_2 = c + id$$. 
+Let's multiply these two numbers the same way we do for unknown variables in normal algebra, that is  
 
+$$
+z_1 z_2 = (a + ib)(c + id) = ac + iad + ibc + i^2bd
+$$
+
+From the definition of imaginary unit $$i = \sqrt{-1}$$ you can see that $$i^2$$ is simply equal to $$-1$$ which is a real number! 
+Now let's bundle up the real parts together and the imaginary parts together and come up with a more compact expression for multiplication 
+
+$$
+z_1 z_2 = (ac - bd) + i(ad + bc)
+$$
+
+### Conjugation 
+Conjugation is a fancy name for when you negate the imaginary part of a complex number, that is you multiply the imaginary part by $$-1$$. 
+To show that a complex number is conjugated you would add an asterisk on the top right corner of the symbol. 
+
+$$
+z = a + ib \rightarrow z^* = a - ib
+$$
+
+As a result, if you conjugate a complex number twice you will get the original number 
+
+$$
+(z^*)^* = z
+$$
+
+### Scalar multiplication 
+
+
+## Absolute Value
+
+
+## Practice Problems 
+**1. Division**: Figure out the expression for dividing two complex numbers. 
+
+[Solutions](sol){: .btn }
+
+## Footnote
+[^1]: It might be tempting to think of a complex number as a vector and we will do that in later sections. However, they are not any ordinary vectors. For example the rules of multiplication are different for complex numbers from what you have seen with normal vectors in linear algebra. 
