@@ -1,7 +1,7 @@
 {"0": {
     "doc": "Complex Numbers",
     "title": "Complex Numbers",
-    "content": "This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. ",
+    "content": "This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. Historically, complex numbers were used in quantum mechanics to represent the wavefunction of a quantum object like electrons. In quantum computing, complex numbers are used to specify the states of qubits. You usually need more than one complex number to specify all the state of a quantum object or a quantum computer. ",
     "url": "/math/complex/",
     
     "relUrl": "/math/complex/"
@@ -22,7 +22,7 @@
   },"3": {
     "doc": "Complex Numbers",
     "title": "Rules of manipulation",
-    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straight forward. You just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Negation . The negative of a complex number is obtained by negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Multiplication . ",
+    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. You just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Negation . The negative of a complex number is obtained by negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Multiplication . ",
     "url": "/math/complex/#rules-of-manipulation",
     
     "relUrl": "/math/complex/#rules-of-manipulation"
@@ -106,11 +106,32 @@
   },"15": {
     "doc": "Home",
     "title": "Learn Quantum Computing on your own",
-    "content": " ",
+    "content": "What one fool can understand, another can. Feynman . ",
     "url": "/#learn-quantum-computing-on-your-own",
     
     "relUrl": "/#learn-quantum-computing-on-your-own"
   },"16": {
+    "doc": "Home",
+    "title": "Can I learn quantum computing?",
+    "content": "Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can’t learn it now in this century. With the right mathematical toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you’re in high school you can learn quantum computing. You just need the right mathematics. Basics of Complex numbers, linear algebra (matrices and vectors), and probability theory are enough to get started. The more mathematics you know the easier it gets. ",
+    "url": "/#can-i-learn-quantum-computing",
+    
+    "relUrl": "/#can-i-learn-quantum-computing"
+  },"17": {
+    "doc": "Home",
+    "title": "Where to start",
+    "content": "If you are at high school level or early college, you should start with the mathematics. I have made the mathematics as concise as possible. Learn the basics of complex numbers, linear algebra, and probability theory and then move on to the quantum computing section. Otherwise, if you are already familiar with the above three math subjects, you can just go ahead to the quantum computing section. Study the sections sequentially. You would not want to skip the initial sections as the concepts are used in later sections where the more specific topics are discussed. ",
+    "url": "/#where-to-start",
+    
+    "relUrl": "/#where-to-start"
+  },"18": {
+    "doc": "Home",
+    "title": "Practice, Practice, Practice!",
+    "content": "Just like a craftsman, you get better by doing it. Doing physics or math involves solving problems on your own with pen and paper. Mere Reading won’t do the trick, it would just create a mirage of understanding. There are selected problems at the end of each page. Try to solve them before jumping to the solutions. ",
+    "url": "/#practice-practice-practice",
+    
+    "relUrl": "/#practice-practice-practice"
+  },"19": {
     "doc": "Home",
     "title": "Home",
     "content": " ",

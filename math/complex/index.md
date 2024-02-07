@@ -8,6 +8,9 @@ has_children: false
 # Complex Numbers 
 
 This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. 
+Historically, complex numbers were used in quantum mechanics to represent the wavefunction of a quantum object like electrons. 
+In quantum computing, complex numbers are used to specify the states of qubits. 
+You usually need more than one complex number to specify all the state of a quantum object or a quantum computer. 
 
 ## What is a complex number 
 A complex number is a special ordered set of two real numbers. 
@@ -28,7 +31,7 @@ Now the product of a real number $$b$$ and the imaginary unit will be an imagina
 In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. 
 
 ### Addition
-Adding two complex numbers is straight forward. You just add the real parts together and add the imaginary parts together.  
+Adding two complex numbers is straightforward. You just add the real parts together and add the imaginary parts together.  
 
 $$
 z_1 = a + ib \\
