@@ -57,14 +57,14 @@
   },"8": {
     "doc": "Complex Numbers",
     "title": "Rules of manipulation",
-    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. You just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Negation . The negative of a complex number is obtained by negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Multiplication . We can actually figure out the rules of multiplication on our own if we use the real-imaginary representation. Assume we have two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). Let’s multiply these two numbers the same way we do for unknown variables in normal algebra, that is . \\[z_1 z_2 = (a + ib)(c + id) = ac + iad + ibc + i^2bd\\] From the definition of imaginary unit \\(i = \\sqrt{-1}\\) you can see that \\(i^2\\) is simply equal to \\(-1\\) which is a real number! Now let’s bundle up the real parts together and the imaginary parts together and come up with a more compact expression for multiplication . \\[z_1 z_2 = (ac - bd) + i(ad + bc)\\] Conjugation . Conjugation is a fancy name for when you negate the imaginary part of a complex number, that is you multiply the imaginary part by \\(-1\\). To show that a complex number is conjugated you would add an asterisk on the top right corner of the symbol. \\[z = a + ib \\rightarrow z^* = a - ib\\] As a result, if you conjugate a complex number twice you will get the original number . \\[(z^*)^* = z\\] Scalar multiplication . ",
+    "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. Just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Real multiplication . To multiply a complex number by a real number \\(r\\), you would just multiply each part by \\(r\\) . \\[rz = ra + irb\\] Negation . The negative of a complex number is obtained by multiplying it by \\(-1\\) that is negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is equal to adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Complex Multiplication . We can actually figure out the rules of multiplying two complex numbers on our own if we use the real-imaginary representation. Assume we have two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). Let’s multiply these two numbers the same way we do for unknown variables in normal algebra, that is . \\[z_1 z_2 = (a + ib)(c + id) = ac + iad + ibc + i^2bd\\] From the definition of imaginary unit \\(i = \\sqrt{-1}\\) you can see that \\(i^2\\) is simply equal to \\(-1\\) which is a real number! Now let’s bundle up the real parts together and the imaginary parts together and come up with a more compact expression for multiplication . \\[z_1 z_2 = (ac - bd) + i(ad + bc)\\] Conjugation . Conjugation is a fancy name for when you negate the imaginary part of a complex number, that is you multiply the imaginary part by \\(-1\\). To show that a complex number is conjugated you would add an asterisk on the top right corner of the symbol. \\[z = a + ib \\rightarrow z^* = a - ib\\] As a result, if you conjugate a complex number twice you will get the original number . \\[(z^*)^* = z\\] ",
     "url": "/math/complex/#rules-of-manipulation",
     
     "relUrl": "/math/complex/#rules-of-manipulation"
   },"9": {
     "doc": "Complex Numbers",
     "title": "Absolute Value",
-    "content": " ",
+    "content": "The absolute value of a complex number \\(z\\) tells us how big the complex number is. It is denoted by \\(|z|\\) and is defined as the square root of the multiplication of the complex number with its own conjugate. \\[|z| = \\sqrt{zz^*}\\] ",
     "url": "/math/complex/#absolute-value",
     
     "relUrl": "/math/complex/#absolute-value"
@@ -83,92 +83,127 @@
     
     "relUrl": "/math/complex/#footnote"
   },"12": {
+    "doc": "Probability Theory",
+    "title": "Probability Theory",
+    "content": "Quantum theory has a probabilistic interpretation. There is an inherent uncertainty in determining physical quantities in quantum mechanics. For example, you can’t determine the position and velocity of an electron simultaneously. It’s just a direct consequence of the math that is used in quantum mechanics. Same is true for qubits which are quantum mechanical objects. You can’t determine the exact state of any arbitrary qubit. But, you can describe the state of a qubit probabilistically and measure the qubit and get a value as a result. However, this does not guarantee that if you prepare the same qubit and measure it again, the result would be the same. The point I’m trying to make is that probability theory is necessary in understanding how a quantum object behaves or a quantum computer operates. Here, you will learn the basics of probability theory. ",
+    "url": "/math/probability/",
+    
+    "relUrl": "/math/probability/"
+  },"13": {
+    "doc": "Probability Theory",
+    "title": "Sample space",
+    "content": "The sample space contains all the possible outcomes of a random experiment (such as tossing coins, rolling dice, or measuring qubits). ",
+    "url": "/math/probability/#sample-space",
+    
+    "relUrl": "/math/probability/#sample-space"
+  },"14": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Linear Algebra",
+    "content": "This is a very short introduction. Linear algebra is vast and you can get as much accurate as you want in definitions, proofs, and so on. That is not what we want to do here. You will learn the basic definitions and operations on vectors and matrices. These basics concepts are enough to get started with quantum computing. ",
+    "url": "/math/linalgebra/#linear-algebra",
+    
+    "relUrl": "/math/linalgebra/#linear-algebra"
+  },"15": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Vector",
+    "content": "a vector is an ordered set of numbers. For example \\(\\bm{v} = (-1, 0.5, 3)\\) is a vector.1 It contains three numbers which are also called the elements. A vector can have any number of elements. A vector with only one element is just a scalar (just a number). Column vs Row . There are two ways to list the elements of a vector. In a row . \\[\\bm{v} = \\begin{pmatrix} -1 &amp; 0.5 &amp; 3 \\end{pmatrix}\\] or in a column . \\[\\bm{u} = \\begin{pmatrix} -1 \\\\ 0.5 \\\\ 3 \\end{pmatrix}\\] The row vector \\(\\bm{v}\\) and the column vector \\(\\bm{u}\\) are considered to be different. That is why I used two different letters to represent them. There is an operation that relates these two to each other. It’s called transpose and is shown by T in the superscript. \\[\\bm{v}^T = \\bm{u} \\\\ \\bm{u}^T = \\bm{v} \\\\\\] If you transpose a vector twice, you get the same vector. \\[(\\bm{v}^T)^T = \\bm{v}\\] Scalar multiplication . You can multiply a vector by a scalar (which is just a number). For that, you would just need to multiply individual elements of the vector by that same scalar. \\[a\\bm{u} = \\begin{pmatrix} -a \\\\ 0.5a \\\\ 3a \\end{pmatrix}\\] ",
+    "url": "/math/linalgebra/#vector",
+    
+    "relUrl": "/math/linalgebra/#vector"
+  },"16": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Footnote",
+    "content": ". | A boldface variable \\(\\bm{v}\\) is usually used to denote a vector. Another way of denoting a vector is to put an arrow on top \\(\\overrightarrow{v}\\). I’m going to stick to the boldface notation. &#8617; . | . ",
+    "url": "/math/linalgebra/#footnote",
+    
+    "relUrl": "/math/linalgebra/#footnote"
+  },"17": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Linear Algebra: Vectors",
+    "content": " ",
+    "url": "/math/linalgebra/",
+    
+    "relUrl": "/math/linalgebra/"
+  },"18": {
     "doc": "Mathematics",
     "title": "Mathematics",
     "content": "All the mathematics that you will need in quantum computing are covered in here. ",
     "url": "/math/",
     
     "relUrl": "/math/"
-  },"13": {
+  },"19": {
     "doc": "Quantum Algorithms",
     "title": "Quantum Algorithms",
     "content": " ",
     "url": "/qcomputing/qalgorithm/",
     
     "relUrl": "/qcomputing/qalgorithm/"
-  },"14": {
+  },"20": {
     "doc": "Qubit",
     "title": "Qubit",
     "content": "A qubit is represented by a two-dimensional complex vector usually denoted by \\(|\\psi\\rangle\\). Historically \\(\\psi\\) is used as the wavefunction of a quantum particle like an electron or any other object that behaves quantum mechanically. ",
     "url": "/qcomputing/qubit/#qubit",
     
     "relUrl": "/qcomputing/qubit/#qubit"
-  },"15": {
+  },"21": {
     "doc": "Qubit",
     "title": "Ket and Bra",
     "content": "The \\(|\\rangle\\) is called a ket introduced by Paul Dirac. It’s a way of distinguishing a column vector \\(|v\\rangle\\) (ket) from its dual row vector \\(\\langle v|\\) (called bra). The state of the qubit, \\(|\\psi\\rangle\\), can be explicitly written as a two component column vector . \\[|\\psi\\rangle = \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix}\\] where \\(c_1\\) and \\(c_2\\) are complex numbers. The qubit can also be represented by its dual row vector . \\[\\langle\\psi| = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix}\\] These two representations are considered equal. ",
     "url": "/qcomputing/qubit/#ket-and-bra",
     
     "relUrl": "/qcomputing/qubit/#ket-and-bra"
-  },"16": {
+  },"22": {
     "doc": "Qubit",
     "title": "Inner product and normalization",
     "content": "Now, the elements of the state vector \\(c_1\\) and \\(c_2\\) cannot be any numbers as they are limited by the normalization condition. It is a postulate of quantum mechanics that the state of a qubit is normalized which means the magnitude of the state vector is unity. By definition the magnitude (or norm) of a complex vector \\(\\|\\psi\\|\\) is equal to the square root of its inner product with its dual row vector. \\[\\|\\psi\\| = \\sqrt{\\langle \\psi | \\cdot | \\psi \\rangle}\\] The inner product \\(\\langle \\psi | \\cdot | \\psi \\rangle\\) is often abbreviated as \\(\\langle \\psi | \\psi \\rangle\\). It is worth mentioning that the inner product is always defined between a bra and a ket. Hence, called bracket. We can write the inner product explicitly in terms of \\(c_1\\) and \\(c_2\\) . \\[\\langle \\psi | \\psi \\rangle = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix} \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix} = |c_1|^2 + |c_2|^2.\\] Again, the normalization dictates that \\(\\sqrt{\\langle\\psi|\\psi\\rangle}=1\\). In other words . \\[\\sqrt{|c_1|^2 + |c_2|^2} = 1.\\] ",
     "url": "/qcomputing/qubit/#inner-product-and-normalization",
     
     "relUrl": "/qcomputing/qubit/#inner-product-and-normalization"
-  },"17": {
+  },"23": {
     "doc": "Qubit",
     "title": "Rays",
     "content": "Let’s assume we have a qubit at a specific state \\(\\) . ",
     "url": "/qcomputing/qubit/#rays",
     
     "relUrl": "/qcomputing/qubit/#rays"
-  },"18": {
+  },"24": {
     "doc": "Qubit",
     "title": "Single Qubit Gates",
     "content": "Gates are operations that change the state of qubits. That is what quantum computing means. You compute by applying gates on your qubits. ",
     "url": "/qcomputing/qubit/#single-qubit-gates",
     
     "relUrl": "/qcomputing/qubit/#single-qubit-gates"
-  },"19": {
+  },"25": {
     "doc": "Qubit",
     "title": "Multiple Qubits",
     "content": "The . ",
     "url": "/qcomputing/qubit/#multiple-qubits",
     
     "relUrl": "/qcomputing/qubit/#multiple-qubits"
-  },"20": {
+  },"26": {
     "doc": "Qubit",
     "title": "Qubit",
     "content": "Here you will learn the mathematics of representing quantum information and quantum computing operations. ",
     "url": "/qcomputing/qubit/",
     
     "relUrl": "/qcomputing/qubit/"
-  },"21": {
+  },"27": {
     "doc": "Quantum Computing",
     "title": "Quantum Computing",
     "content": " ",
     "url": "/qcomputing/",
     
     "relUrl": "/qcomputing/"
-  },"22": {
-    "doc": "Condensed Matter",
-    "title": "Condensed Matter",
-    "content": " ",
-    "url": "/condmat/",
-    
-    "relUrl": "/condmat/"
-  },"23": {
-    "doc": "Complex Numbers Solution",
+  },"28": {
+    "doc": "Complex Numbers Solutions",
     "title": "Solutions to Complex Numbers",
-    "content": "1. Division: Figure out the expression for dividing two complex numbers. Assume two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). We want to figure out how to divide \\(z_1\\) by \\(z_2\\). First, we multiply both with \\(z_2^*\\). That won’t change the ratio . \\[\\frac{z_1}{z_2} = \\frac{z_1z_2^*}{z_2z_2^*}.\\] Notice that the denominator is just a real number \\(z_2z_2^* = |z_2|^2 = c^2 + d^2\\). So dividing by \\(|z_2|^2\\) is just like a scalar multiplication by \\(1/|z_2|^2\\). Therefore, we just need to calculate \\(z_1z_2^*\\). \\[z_1z_2^* = (ac + bd) + i(-ad + bc)\\] Finally, rescaling this by \\(1/(c^2 + d^2)\\) leads us to the final expression for division . \\[\\frac{z_1}{z_2} = \\frac{1}{c^2 + d^2} [(ac + bd) + i(-ad + bc)]\\] ",
+    "content": "1. Division: Figure out the expression for dividing two complex numbers. Assume two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). We want to figure out how to divide \\(z_1\\) by \\(z_2\\). First, we multiply both by \\(z_2^*\\). That won’t change the ratio . \\[\\frac{z_1}{z_2} = \\frac{z_1z_2^*}{z_2z_2^*}.\\] Notice that the denominator is just a real number \\(z_2z_2^* = |z_2|^2 = c^2 + d^2\\). So dividing by \\(|z_2|^2\\) is just like a scalar multiplication by \\(1/|z_2|^2\\). Therefore, we just need to calculate \\(z_1z_2^*\\). \\[z_1z_2^* = (ac + bd) + i(-ad + bc)\\] Finally, rescaling this by \\(1/(c^2 + d^2)\\) leads us to the final expression for division . \\[\\frac{z_1}{z_2} = \\frac{1}{c^2 + d^2} [(ac + bd) + i(-ad + bc)]\\] ",
     "url": "/math/complex/sol.html#solutions-to-complex-numbers",
     
     "relUrl": "/math/complex/sol.html#solutions-to-complex-numbers"
-  },"24": {
-    "doc": "Complex Numbers Solution",
-    "title": "Complex Numbers Solution",
+  },"29": {
+    "doc": "Complex Numbers Solutions",
+    "title": "Complex Numbers Solutions",
     "content": " ",
     "url": "/math/complex/sol.html",
     

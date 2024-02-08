@@ -1,8 +1,6 @@
 ---
 layout: default
-title: Complex Numbers Solution
-parent: Mathematics
-has_children: false
+title: Complex Numbers Solutions
 nav_exclude: true
 ---
 
@@ -10,9 +8,9 @@ nav_exclude: true
 
 **1. Division**: Figure out the expression for dividing two complex numbers.  
 
-Assume two complex numbers $$z_1 = a + ib$$ and $$z_2 = c + id$$.  
+Assume two complex numbers $$z_1 = a + ib$$ and $$z_2 = c + id$$. 
 We want to figure out how to divide $$z_1$$ by $$z_2$$. 
-First, we multiply both with $$z_2^*$$. 
+First, we multiply both by $$z_2^*$$. 
 That won't change the ratio
 
 $$
