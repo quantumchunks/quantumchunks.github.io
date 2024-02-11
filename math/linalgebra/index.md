@@ -13,7 +13,7 @@ You will learn the basic definitions and operations on vectors and matrices.
 These basics concepts are enough to get started with quantum computing.
 
 ## Vector
-a vector is an ordered set of numbers.
+A vector is an ordered set of numbers.
 For example $$\bm{v} = (-1, 0.5, 3)$$ is a vector.[^1] 
 It contains three numbers which are also called the _elements_. 
 A vector can have any number of elements. 
@@ -48,6 +48,7 @@ $$
 \bm{u}^T = \bm{v} \\  
 $$
 
+The transpose of a column vector is a row vector and vice versa. 
 If you transpose a vector twice, you get the same vector. 
 
 $$

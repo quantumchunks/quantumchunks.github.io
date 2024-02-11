@@ -54,7 +54,7 @@ $$
 $$
 
 ### Subtraction 
-Subtracting two complex numbers $$z_1 - z_2$$ is equal to adding the first one to the negative of the second one $$z_1 + (-z_2)$$. 
+Subtracting two complex numbers $$z_1 - z_2$$ is the same as adding the first one to the negative of the second one $$z_1 + (-z_2)$$. 
 
 $$
 z_1 - z_2 = (a - c) + i(b - d) 
