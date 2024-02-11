@@ -106,7 +106,7 @@
   },"15": {
     "doc": "Probability Theory",
     "title": "Event",
-    "content": "An event \\(E\\) is a subset of the sample sample space \\(E \\subset S\\). The probability of an event is the sum of probabilities of its outcomes, that is . \\[P(E) = \\sum_{s \\in E} P(s) \\le 1.\\] For example, in tossing two coins, the event for the first coin being tails is \\(E = \\{TH, TT\\}\\) and the probability of this event is \\(P(E) = P(TH) + P(TT) = 1/2\\). Similarly if we measure the spin of two electrons (or measure the state of two qubits) the sample space would be \\(S = \\{\\uparrow\\uparrow, \\uparrow\\downarrow, \\downarrow\\uparrow, \\downarrow\\downarrow\\}\\) and the event of first electron having an up spin would be \\(E = \\{\\uparrow\\uparrow, \\uparrow\\downarrow\\}\\) with a probability of \\(P(E) = 1/2\\). ",
+    "content": "An event \\(E\\) is a subset of the sample sample space \\(E \\subset S\\). The probability of an event is the sum of probabilities of its outcomes, that is . \\[P(E) = \\sum_{s \\in E} P(s) \\le 1.\\] For example, in tossing two coins, the event for the first coin being tails is \\(E = \\{TH, TT\\}\\) and the probability of this event is \\(P(E) = P(TH) + P(TT) = 1/2\\). Similarly if we measure the spin of two electrons (or measure the state of two qubits) the sample space would be \\(S = \\{\\uparrow\\uparrow, \\uparrow\\downarrow, \\downarrow\\uparrow, \\downarrow\\downarrow\\}\\) and the event of first electron having an up spin would be \\(E = \\{\\uparrow\\uparrow, \\uparrow\\downarrow\\}\\) with a probability of \\(P(E) = 1/2\\). ## . ",
     "url": "/math/probability/#event",
     
     "relUrl": "/math/probability/#event"
