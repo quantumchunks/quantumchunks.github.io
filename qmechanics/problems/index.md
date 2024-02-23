@@ -10,7 +10,7 @@ How do we know if the wave function stays normalized as it evolves in time? [^1]
 
 **Solution**  
 The answer is in the Schrodinger equation which describes the time evolution of the wave function. 
-Assume a particle with the wave function $$\psi(x, t)$$ in a one-dimensional world with potential energy $$V(x)$$. 
+Imagine a particle with the wave function $$\psi(x, t)$$ in a one-dimensional world with potential energy $$V(x)$$. 
 The Schrodinger equation for this particle is 
 
 $$
@@ -42,20 +42,28 @@ $$
 Using this we can rewrite the integrand as
 
 $$
-\frac{\partial}{\partial t} |\psi|^2 = \frac{-i\hbar}{2m}\bigg(\frac{\partial^2\psi^*}{\partial x^2}\psi - \psi^*\frac{\partial^2\psi}{\partial x^2}\bigg)
+\frac{\partial}{\partial t} |\psi|^2 = \frac{-i\hbar}{2m}\bigg(\frac{\partial^2\psi^*}{\partial x^2}\psi - \psi^*\frac{\partial^2\psi}{\partial x^2}\bigg). 
 $$
 
+Let's add and subtract $$(\partial\psi^*/\partial_x)(\partial\psi/\partial_x)$$ so that the right hand side becomes  
+
 $$
-= \frac{-i\hbar}{2m}\frac{\partial}{\partial x}\bigg(\frac{\partial\psi^*}{\partial x}\psi - \psi^*\frac{\partial\psi}{\partial x}\bigg).
+\frac{-i\hbar}{2m}\bigg(\frac{\partial^2\psi^*}{\partial x^2}\psi + \frac{\partial\psi^*}{\partial x}\frac{\partial\psi}{\partial x} - \frac{\partial\psi^*}{\partial x}\frac{\partial\psi}{\partial x} - \psi^*\frac{\partial^2\psi}{\partial x^2}\bigg). 
 $$
 
-Therefore, the integral is reduced to
+Now it's easy to see that we can factor out a partial derivative with respect to $$x$$ 
+
+$$
+\frac{-i\hbar}{2m}\frac{\partial}{\partial x}\bigg(\frac{\partial\psi^*}{\partial x}\psi - \psi^*\frac{\partial\psi}{\partial x}\bigg).
+$$
+
+Therefore, the integral is simply evaluated as
 
 $$
 \int_{-\infty}^{\infty}\frac{\partial}{\partial t}|\psi|^2 dx = \frac{-i\hbar}{2m}\bigg(\frac{\partial\psi^*}{\partial x}\psi - \psi^*\frac{\partial\psi}{\partial x}\bigg)\bigg|_{-\infty}^{\infty}. 
 $$
 
-The wave function $$\psi(x, t)$$ should approach zero in the limit $$x\rightarrow\pm\infty$$ in order to be square integrable and normalizable. Therefore, the right hand side amounts to zero.  
+The wave function $$\psi(x, t)$$ should approach zero in the limit $$x\rightarrow\pm\infty$$ in order to be square integrable and normalizable. As a result, the right hand side amounts to zero.  
 Therefore, the time derivative of the norm is zero, 
 
 $$
