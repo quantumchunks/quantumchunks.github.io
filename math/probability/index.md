@@ -18,10 +18,12 @@ The point I'm trying to make is that probability theory is necessary in understa
 
 Here, you will learn the basics of probability theory. 
 
+// talk about probabilistic events and random experiments and outcomes 
+
 ## Sample space 
 The sample space contains all the possible **outcomes** of a random experiment (such as tossing coins, rolling dice, or measuring qubits). 
-Mathematically it is defined as a set and is usually denoted by $$S$$. 
-For example, the sample space of a single coin toss experiment is a set with two members heads and tails 
+Mathematically it is defined as a **set** and is usually denoted by $$S$$. 
+For example, the sample space of an experiment involving a single coin toss is a set with two members heads and tails 
 
 $$
 S = \{H, T\}.
@@ -33,13 +35,13 @@ $$
 S = \{1, 2, 3, 4, 5, 6\}.
 $$
 
-**Measuring a qubit** is not exactly similar to a coin toss though its sample space is similar in that it has two members 
+**Measuring a qubit** is not exactly similar to a coin toss, though its sample space has two members as well 
 
 $$
 S = \{\uparrow, \downarrow\}.
 $$ 
 
-The up and down arrows signify the possible values for measuring the spin of an electron (spin-up and spin-dowwn) which is equivalent to a qubit. [^1]
+The up and down arrows signify the possible values for measuring the spin of an electron (spin-up and spin-dowwn). An electron's spin is equivalent to a qubit. [^1]
 
 ## Probability 
 Each outcome $$s$$ has a probability of occurrence $$P(s)$$ that is a positive number less than or equal to 1 ($$0< P(s) \le 1$$). 
@@ -51,7 +53,7 @@ $$
 $$
 
 ### No prior assumption 
-In the absence of any prior assumptions, all the outcomes of an experiment are considered to have **equal probabilities**.  
+In the absence of any prior assumptions, all the outcomes of an experiment are considered to have **equal probabilities**. 
 For example in a die roll each side has a probability of 1/6, that is  
 
 $$
@@ -78,6 +80,6 @@ Similarly if we measure the spin of two electrons (or measure the state of two q
 ## 
 
 ## Footnote 
-[^1]: A qubit in general has more than two states but they are engineered in a way that they almost always operate within the two states that have the lowest energy. In that case they are equivalent to the spin of an electron. 
-[^2]: If you are not familiar with the symbols I have used, here are the definitions: $$\in$$: in / a member of, $$\forall$$: for all, $$\sum$$: sum of all things that look like the following. 
+[^1]: Qubits in general have more than two states but they are engineered in a way that they almost always operate within the two states that have the lowest energy. Under this condition, they are equivalent to the spin of an electron. 
+[^2]: If you are not familiar with the symbols I have used, here are the definitions. $$\in$$: in / a member of, $$\sum$$: sum of the following items. 
 
