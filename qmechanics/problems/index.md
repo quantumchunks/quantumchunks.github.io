@@ -70,6 +70,6 @@ $$
 \frac{d}{dt}\int_{-\infty}^{\infty}|\psi|^2 dx = 0, 
 $$
 
-which means that the Schrodinger equation keeps the wave function normalized. 
+which means that if the wave function is normalized, it stays normalized as it evolves via the Schrodinger equation.
 
 [^1]: Of course we are assuming that the wave function is not being measured as it evolves. 

@@ -5,6 +5,10 @@ parent: Mathematics
 has_children: false
 ---
 
+Felix Bloch talking to Heisenberg on a walk  
+Bloch: _Space is simply the field of linear operators._  
+Heisenberg: _Nonsense, space is blue and birds fly through it._
+
 # Linear Algebra
 This is a very short introduction. 
 Linear algebra is vast and you can get as much accurate as you want in definitions, proofs, and so on. 
