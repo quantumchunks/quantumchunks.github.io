@@ -6,6 +6,11 @@ has_children: false
 ---
 
 # Ehrenfest's Theorem
+
+![Ehrenfest](/assets/images/ehrenfest.jpg){: width="128px"}  
+*Paul Ehrenfest*  
+source: [Smithsonian Libraries](https://www.sil.si.edu/DigitalCollections/hst/scientific-identity/cf/by_name_display_results.cfm?scientist=Ehrenfest,%20Paul)
+
 Ehrenfest's theorem bridges the gap between classical and quantum mechanics. 
 It states that in quantum mechanics the **expectation values** obey classical laws. 
 For example, the expectation values of position $$\langle x\rangle$$ and momentum $$\langle p\rangle$$ are related as follows 
