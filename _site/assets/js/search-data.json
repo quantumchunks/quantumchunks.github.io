@@ -1,291 +1,326 @@
 {"0": {
-    "doc": "Problems",
-    "title": "Normalized wave function stays normalized",
-    "content": "How do we know if the wave function stays normalized as it evolves in time? 1 . Solution The answer is in the Schrodinger equation which describes the time evolution of the wave function. Imagine a particle with the wave function \\(\\psi(x, t)\\) in a one-dimensional world with potential energy \\(V(x)\\). The Schrodinger equation for this particle is . \\[i\\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi}{\\partial x^2} + V\\psi.\\] Now, let’s see what happens if we take the total derivative of the norm of the wave function \\(\\int\\vert\\psi\\vert^2 dx\\) with respect to time which is equivalent to . \\[\\frac{d}{dt}\\int_{-\\infty}^{\\infty}|\\psi|^2 dx = \\int_{-\\infty}^{\\infty}\\frac{\\partial}{\\partial t}|\\psi(x, t)|^2 dx.\\] Since \\(\\vert\\psi\\vert^2 = \\psi^*\\psi\\), we can use the product rule to write the integrand as . \\[\\frac{\\partial}{\\partial t} |\\psi|^2 = \\frac{\\partial\\psi^*}{\\partial t}\\psi + \\psi^* \\frac{\\partial\\psi}{\\partial t}.\\] From the Schrodinger equation and its complex conjugate we know . \\[i\\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi}{\\partial x^2} + V\\psi,\\] \\[-i\\hbar \\frac{\\partial \\psi^*}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi^*}{\\partial x^2} + V\\psi^*.\\] Using this we can rewrite the integrand as . \\[\\frac{\\partial}{\\partial t} |\\psi|^2 = \\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial^2\\psi^*}{\\partial x^2}\\psi - \\psi^*\\frac{\\partial^2\\psi}{\\partial x^2}\\bigg).\\] Let’s add and subtract \\((\\partial\\psi^*/\\partial_x)(\\partial\\psi/\\partial_x)\\) so that the right hand side becomes . \\[\\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial^2\\psi^*}{\\partial x^2}\\psi + \\frac{\\partial\\psi^*}{\\partial x}\\frac{\\partial\\psi}{\\partial x} - \\frac{\\partial\\psi^*}{\\partial x}\\frac{\\partial\\psi}{\\partial x} - \\psi^*\\frac{\\partial^2\\psi}{\\partial x^2}\\bigg).\\] Now it’s easy to see that we can factor out a partial derivative with respect to \\(x\\) . \\[\\frac{-i\\hbar}{2m}\\frac{\\partial}{\\partial x}\\bigg(\\frac{\\partial\\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial\\psi}{\\partial x}\\bigg).\\] Therefore, the integral is simply evaluated as . \\[\\int_{-\\infty}^{\\infty}\\frac{\\partial}{\\partial t}|\\psi|^2 dx = \\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial\\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial\\psi}{\\partial x}\\bigg)\\bigg|_{-\\infty}^{\\infty}.\\] The wave function \\(\\psi(x, t)\\) should approach zero in the limit \\(x\\rightarrow\\pm\\infty\\) in order to be square integrable and normalizable. As a result, the right hand side amounts to zero. Therefore, the time derivative of the norm is zero, . \\[\\frac{d}{dt}\\int_{-\\infty}^{\\infty}|\\psi|^2 dx = 0,\\] which means that if the wave function is normalized, it stays normalized as it evolves via the Schrodinger equation. | Of course we are assuming that the wave function is not being measured as it evolves. &#8617; . | . ",
-    "url": "/qmechanics/problems/#normalized-wave-function-stays-normalized",
+    "doc": "Ehrenfest's Theorem",
+    "title": "Ehrenfest’s Theorem",
+    "content": "Ehrenfest’s theorem bridges the gap between classical and quantum mechanics. It states that in quantum mechanics the expectation values obey classical laws. For example, the expectation values of position \\(\\langle x\\rangle\\) and momentum \\(\\langle p\\rangle\\) are related as follows . \\[\\langle p\\rangle = m\\frac{d\\langle x\\rangle}{dt}.\\] Or the Newton’s second law still works for the expectation value of momentum \\(\\langle p\\rangle\\) and force \\(\\langle -\\partial_xV\\rangle\\) where \\(V(x)\\) is the potential energy . \\[\\frac{d\\langle p\\rangle}{dt} = \\langle -\\frac{\\partial V}{\\partial x}\\rangle.\\] What is meant by an expectation value, you might ask. Assume a particle that behaves quantum mechanically. It has a wave function \\(\\psi(x)\\) that spreads over a region in space. The expectation value of its position, which is denoted by \\(\\langle x\\rangle\\) is a statistical measure. Before I tell you what \\(\\langle x\\rangle\\) means, I want to emphasize what it doesn’t. It does NOT mean the average position if you measure the position of the same particle over and over again. The reason is that the first time you measure the position of a particle its wave function collapses and the following measurements are not going to be independent. What the expectation value actually means is that if you had an ensemble of identically prepared particles (same initial wave function) and you measured their positions all at once and you took the average of those values, you’d get a number close to \\(\\langle x\\rangle\\). 1 . ",
+    "url": "/qmechanics/problems/ehrenfest.html#ehrenfests-theorem",
     
-    "relUrl": "/qmechanics/problems/#normalized-wave-function-stays-normalized"
+    "relUrl": "/qmechanics/problems/ehrenfest.html#ehrenfests-theorem"
   },"1": {
+    "doc": "Ehrenfest's Theorem",
+    "title": "Proof",
+    "content": "Proving Ehrenfest’s theorem is straightforward. It is an opportunity to practice our skills in integration by parts and the product formula for derivatives. First relation . To prove the first relation we need to take the definition of momentum operator \\(p = -i\\hbar\\partial_x\\) as given otherwise it would be a circular proof. Let’s start by taking the time derivative of \\(\\langle x\\rangle\\), . \\[\\frac{d\\langle x\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\frac{\\partial}{\\partial t} x |\\psi|^2 dx = \\int_{-\\infty}^{\\infty} x\\bigg(\\frac{\\partial \\psi^*}{\\partial t}\\psi + \\psi^*\\frac{\\partial \\psi}{\\partial t}\\bigg)dx.\\] Using Schrodinger equation and its complex conjugate we can replace the time derivatives with second order spatial derivatives . \\[\\frac{d\\langle x\\rangle}{dt} = -\\frac{i\\hbar}{2m}\\int_{-\\infty}^{\\infty} x\\bigg(\\frac{\\partial^2 \\psi^*}{\\partial x^2}\\psi - \\psi^*\\frac{\\partial^2 \\psi}{\\partial x^2}\\bigg)dx.\\] Adding and removing \\(\\partial_x\\psi^*\\partial_x\\psi\\) inside parentheses results in . \\[\\frac{d\\langle x\\rangle}{dt} = -\\frac{i\\hbar}{2m}\\int_{-\\infty}^{\\infty} x\\bigg(\\frac{\\partial^2 \\psi^*}{\\partial x^2}\\psi + \\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial \\psi}{\\partial x} - \\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial \\psi}{\\partial x} - \\psi^*\\frac{\\partial^2 \\psi}{\\partial x^2}\\bigg)dx,\\] \\[= -\\frac{i\\hbar}{2m}\\int_{-\\infty}^{\\infty} x\\frac{\\partial}{\\partial x}\\bigg(\\frac{\\partial \\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial \\psi}{\\partial x}\\bigg)dx.\\] Integration by parts leads us to . \\[\\frac{d\\langle x\\rangle}{dt} = -\\frac{i\\hbar}{2m}\\bigg[x\\bigg(\\frac{\\partial \\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial \\psi}{\\partial x}\\bigg)\\bigg|_{-\\infty}^{\\infty} - \\int_{-\\infty}^{\\infty} \\bigg(\\frac{\\partial \\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial \\psi}{\\partial x}\\bigg)dx\\bigg].\\] Assuming that the wave function decays at least as fast as \\(1/\\sqrt{|x|}\\), we can convince ourselves that the boundary term is zero. 2 Let’s do another integration by parts, this time on the first term inside the integral above. That gives us another boundary term which is zero and another integrand of the form \\(\\psi^*\\partial_x\\psi\\). Therefore, . \\[\\frac{d\\langle x\\rangle}{dt} = -\\frac{i\\hbar}{2m} \\int_{-\\infty}^{\\infty} 2\\psi^*\\frac{\\partial \\psi}{\\partial x} dx.\\] Rearranging the variables we arrive at . \\[m\\frac{d\\langle x\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\psi^*\\bigg(-i\\hbar\\frac{\\partial}{\\partial x}\\bigg)\\psi dx = \\langle p\\rangle.\\] Second relation . To prove the second relation, we start with the time derivative of momentum . \\[\\frac{d\\langle p\\rangle}{dt} = -i\\hbar \\int_{-\\infty}^{\\infty} \\frac{\\partial}{\\partial t} \\bigg(\\psi^*\\frac{\\partial \\psi}{\\partial x}\\bigg) dx.\\] Apply the product formula . \\[\\frac{d\\langle p\\rangle}{dt} = -i\\hbar \\int_{-\\infty}^{\\infty} \\bigg(\\frac{\\partial \\psi^*}{\\partial t}\\frac{\\partial \\psi}{\\partial x} + \\psi^*\\frac{\\partial^2 \\psi}{\\partial t\\partial x}\\bigg) dx.\\] Use Schrodinger equation to replace the time derivatives with spatial derivatives and the potential energy . \\[\\frac{d\\langle p\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\bigg[\\bigg(-\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\psi^*}{\\partial x^2} + V\\psi^*\\bigg)\\frac{\\partial \\psi}{\\partial x} + \\psi^*\\frac{\\partial}{\\partial x}\\bigg(\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\psi}{\\partial x^2} - V\\psi\\bigg)\\bigg] dx,\\] \\[\\frac{d\\langle p\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\bigg[-\\frac{\\hbar^2}{2m}\\bigg(\\frac{\\partial^2 \\psi^*}{\\partial x^2}\\frac{\\partial \\psi}{\\partial x} - \\psi^*\\frac{\\partial^3 \\psi}{\\partial x^3}\\bigg) + \\bigg(V\\psi^* \\frac{\\partial \\psi}{\\partial x} - \\psi^*\\frac{\\partial (V\\psi)}{\\partial x} \\bigg) \\bigg] dx,\\] Note that \\(\\psi^*\\partial_x(V\\psi) = \\psi^*(\\partial_xV)\\psi + \\psi^*V\\partial_x\\psi\\). Therefore, the second term in the integrand reduces to \\(\\psi^*(\\partial_xV)\\psi\\). Moreover, using integration by parts we can replace the \\(\\psi^*\\partial^3_x\\psi\\) term with . \\[\\int_{-\\infty}^{\\infty} \\psi^*\\frac{\\partial^3 \\psi}{\\partial x^3} dx = \\psi^*\\frac{\\partial^2 \\psi}{\\partial x^2}\\bigg|_{-\\infty}^{\\infty} - \\int_{-\\infty}^{\\infty} \\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial^2 \\psi}{\\partial x^2} dx.\\] The boundary term is zero as the wave function and its derivatives approach zero at infinity. Therefore, . \\[\\frac{d\\langle p\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\bigg[-\\frac{\\hbar^2}{2m}\\bigg(\\frac{\\partial^2 \\psi^*}{\\partial x^2}\\frac{\\partial \\psi}{\\partial x} + \\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial^2 \\psi}{\\partial x^2}\\bigg) - \\psi^* \\frac{\\partial V}{\\partial x}\\psi \\bigg] dx,\\] \\[\\frac{d\\langle p\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\bigg[-\\frac{\\hbar^2}{2m}\\frac{\\partial}{\\partial_x}\\bigg(\\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial \\psi}{\\partial x}\\bigg) - \\psi^* \\frac{\\partial V}{\\partial x}\\psi \\bigg] dx.\\] The first term of the integrand becomes a boundary term after integration . \\[\\int_{-\\infty}^{\\infty} \\frac{\\partial}{\\partial_x}\\bigg(\\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial \\psi}{\\partial x}\\bigg)dx = \\frac{\\partial \\psi^*}{\\partial x}\\frac{\\partial \\psi}{\\partial x} \\bigg|_{-\\infty}^{\\infty}=0\\] which amounts to zero as the wave function approaches zero at infinity. Finally we are left with . \\[\\frac{d\\langle p\\rangle}{dt} = \\int_{-\\infty}^{\\infty} \\psi^* \\bigg(-\\frac{\\partial V}{\\partial x}\\bigg)\\psi dx = \\langle -\\frac{\\partial V}{\\partial x}\\rangle.\\] ",
+    "url": "/qmechanics/problems/ehrenfest.html#proof",
+    
+    "relUrl": "/qmechanics/problems/ehrenfest.html#proof"
+  },"2": {
+    "doc": "Ehrenfest's Theorem",
+    "title": "Footnote",
+    "content": ". | The ensemble average is not always exactly the same as the expectation value but it approaches the expectation value as your sample size gets larger and larger. &#8617; . | This assumption breaks down in the case of a plane wave. &#8617; . | . ",
+    "url": "/qmechanics/problems/ehrenfest.html#footnote",
+    
+    "relUrl": "/qmechanics/problems/ehrenfest.html#footnote"
+  },"3": {
+    "doc": "Ehrenfest's Theorem",
+    "title": "Ehrenfest's Theorem",
+    "content": " ",
+    "url": "/qmechanics/problems/ehrenfest.html",
+    
+    "relUrl": "/qmechanics/problems/ehrenfest.html"
+  },"4": {
     "doc": "Problems",
     "title": "Problems",
-    "content": " ",
+    "content": ". | Normalized wave function stays normalized | Ehrenfest’s theorem | . ",
     "url": "/qmechanics/problems/",
     
     "relUrl": "/qmechanics/problems/"
-  },"2": {
+  },"5": {
     "doc": "Quantum Mechanics",
     "title": "Wave function",
     "content": "What the heck is a wave function? The wave function contains all the information about a particle or an object. It is usually denoted by \\(\\psi\\) and is typically a function of position and time \\(\\psi(x, t)\\). It could also depend on other variables such as discrete values for quantum mechanical quantities such as spin, angular momentum, etc. Here are two examples of the information you can get from a wave function. | \\(|\\psi(x, t)|^2\\) is the probability density of finding the particle at point \\(x\\) at time \\(t\\). This is known as Born’s rule. | \\(\\psi^*(x, t)\\partial_x\\psi(x, t)\\) is the density of the momentum of the particle at point \\(x\\) at time \\(t\\). If you integrate it over space (\\(x\\)) you will get the average momentum of the particle at time \\(t\\). | . Quantum mechanics can only offer statistical information. There is an inherent uncertainty in the theory about how much we can know about a particle. ",
     "url": "/qmechanics/#wave-function",
     
     "relUrl": "/qmechanics/#wave-function"
-  },"3": {
+  },"6": {
     "doc": "Quantum Mechanics",
     "title": "Two kinds of physical processes",
     "content": ". | evolution: wave function evolves according to Schrodinger equation | measurement: wave function collapses suddenly and discontinuously to a spike at a specific point in space-time. | . ",
     "url": "/qmechanics/#two-kinds-of-physical-processes",
     
     "relUrl": "/qmechanics/#two-kinds-of-physical-processes"
-  },"4": {
+  },"7": {
     "doc": "Quantum Mechanics",
     "title": "Quantum Mechanics",
     "content": " ",
     "url": "/qmechanics/",
     
     "relUrl": "/qmechanics/"
-  },"5": {
+  },"8": {
     "doc": "LC Oscillator",
     "title": "LC Oscillator",
     "content": " ",
     "url": "/hardware/superconducting/lc/",
     
     "relUrl": "/hardware/superconducting/lc/"
-  },"6": {
+  },"9": {
     "doc": "Superconducting Qubits",
     "title": "Superconducting Qubits",
     "content": "Learn basic physics of superconducting qubits here. ",
     "url": "/hardware/superconducting/",
     
     "relUrl": "/hardware/superconducting/"
-  },"7": {
+  },"10": {
     "doc": "Superconducting Qubits",
     "title": "Cooper pair box",
     "content": " ",
     "url": "/hardware/superconducting/#cooper-pair-box",
     
     "relUrl": "/hardware/superconducting/#cooper-pair-box"
-  },"8": {
+  },"11": {
     "doc": "Hardware",
     "title": "Hardware",
     "content": "You will learn about different kind of hardware used in today’s quantum computers. ",
     "url": "/hardware/",
     
     "relUrl": "/hardware/"
-  },"9": {
+  },"12": {
     "doc": "Probability Theory",
     "title": "Probability Theory",
     "content": "Quantum theory has a probabilistic interpretation. There is an inherent uncertainty in determining physical quantities in quantum mechanics. For example, you can’t determine the position and velocity of an electron simultaneously. It’s just a direct consequence of the math that is used in quantum mechanics. Same is true for qubits which are quantum mechanical objects. You can’t determine the exact state of any arbitrary qubit. But, you can describe the state of a qubit probabilistically and measure the qubit and get a value as a result. However, this does not guarantee that if you prepare the same qubit and measure it again, the result would be the same. The point I’m trying to make is that probability theory is necessary in understanding how a quantum object behaves or a quantum computer operates. Here, you will learn the basics of probability theory. // talk about probabilistic events and random experiments and outcomes . ",
     "url": "/math/probability/",
     
     "relUrl": "/math/probability/"
-  },"10": {
+  },"13": {
     "doc": "Probability Theory",
     "title": "Sample space",
     "content": "The sample space contains all the possible outcomes of a random experiment (such as tossing coins, rolling dice, or measuring qubits). Mathematically it is defined as a set and is usually denoted by \\(S\\). For example, the sample space of an experiment involving a single coin toss is a set with two members heads and tails . \\[S = \\{H, T\\}.\\] Rolling a 6-sided die has the following sample space . \\[S = \\{1, 2, 3, 4, 5, 6\\}.\\] Measuring a qubit is not exactly similar to a coin toss, though its sample space has two members as well . \\[S = \\{\\uparrow, \\downarrow\\}.\\] The up and down arrows signify the possible values for measuring the spin of an electron (spin-up and spin-dowwn). An electron’s spin is equivalent to a qubit. 1 . ",
     "url": "/math/probability/#sample-space",
     
     "relUrl": "/math/probability/#sample-space"
-  },"11": {
+  },"14": {
     "doc": "Probability Theory",
     "title": "Probability",
     "content": "Each outcome \\(s\\) has a probability of occurrence \\(P(s)\\) that is a positive number less than or equal to 1 (\\(0&lt; P(s) \\le 1\\)). Common sense guides us to establish an axiom that the probabilities of all outcomes add up to 1. Mathematically, the axiom is written as 2 . \\[\\sum_{s \\in S} P(s) = 1.\\] No prior assumption . In the absence of any prior assumptions, all the outcomes of an experiment are considered to have equal probabilities. For example in a die roll each side has a probability of 1/6, that is . \\[P(1) = P(2) = P(3) = P(4) = P(5) = P(6) = \\frac{1}{6}.\\] Or in the case of two coin tosses with the sample space \\(S = \\{HH, HT, TH, TT\\}\\) each outcome has a probability of 1/4 that is . \\[P(HH) = P(HT) = P(TH) = P(TT) = \\frac{1}{4}.\\] ",
     "url": "/math/probability/#probability",
     
     "relUrl": "/math/probability/#probability"
-  },"12": {
+  },"15": {
     "doc": "Probability Theory",
     "title": "Event",
     "content": "An event \\(E\\) is a subset of the sample sample space \\(E \\subset S\\). The probability of an event is the sum of probabilities of its outcomes, that is . \\[P(E) = \\sum_{s \\in E} P(s) \\le 1.\\] For example, in tossing two coins, the event for the first coin being tails is \\(E = \\{TH, TT\\}\\) and the probability of this event is \\(P(E) = P(TH) + P(TT) = 1/2\\). Similarly if we measure the spin of two electrons (or measure the state of two qubits) the sample space would be \\(S = \\{\\uparrow\\uparrow, \\uparrow\\downarrow, \\downarrow\\uparrow, \\downarrow\\downarrow\\}\\) and the event of first electron having an up spin would be \\(E = \\{\\uparrow\\uparrow, \\uparrow\\downarrow\\}\\) with a probability of \\(P(E) = 1/2\\). ## . ",
     "url": "/math/probability/#event",
     
     "relUrl": "/math/probability/#event"
-  },"13": {
+  },"16": {
     "doc": "Probability Theory",
     "title": "Footnote",
     "content": ". | Qubits in general have more than two states but they are engineered in a way that they almost always operate within the two states that have the lowest energy. Under this condition, they are equivalent to the spin of an electron. &#8617; . | If you are not familiar with the symbols I have used, here are the definitions. \\(\\in\\): in / a member of, \\(\\sum\\): sum of the following items. &#8617; . | . ",
     "url": "/math/probability/#footnote",
     
     "relUrl": "/math/probability/#footnote"
-  },"14": {
+  },"17": {
     "doc": "Complex Numbers",
     "title": "Complex Numbers",
     "content": "This is a brief introduction to complex numbers and some essential concepts that are used in quantum mechanics and quantum computing. Historically, complex numbers were used in quantum mechanics to represent the wavefunction of a quantum object like electrons. In quantum computing, complex numbers are used to specify the states of qubits. You usually need more than one complex number to specify all the state of a quantum object or a quantum computer. ",
     "url": "/math/complex/",
     
     "relUrl": "/math/complex/"
-  },"15": {
+  },"18": {
     "doc": "Complex Numbers",
     "title": "What is a complex number",
     "content": "A complex number is a special ordered set of two real numbers. It is usually represented by \\(c\\) or \\(z\\). For example \\(c = (1, -2)\\) is a complex number and is different from \\(c' = (-2, 1)\\) which is another complex number. The order matters. 1 . ",
     "url": "/math/complex/#what-is-a-complex-number",
     
     "relUrl": "/math/complex/#what-is-a-complex-number"
-  },"16": {
+  },"19": {
     "doc": "Complex Numbers",
     "title": "Real-imaginary representation",
     "content": "A complex number, \\(z = (a, b)\\), can also be represented by . \\[z = a + ib\\] where \\(a\\) is called the real part, \\(ib\\) is called the imaginary part, and \\(i\\) is the imaginary unit. The imaginary unit has a specific definition that is \\(i = \\sqrt{-1}\\). As you know, negative numbers do not have any real roots. That is why \\(i\\) is called imaginary. Now the product of a real number \\(b\\) and the imaginary unit will be an imaginary number. That is why \\(ib\\) is imaginary. ",
     "url": "/math/complex/#real-imaginary-representation",
     
     "relUrl": "/math/complex/#real-imaginary-representation"
-  },"17": {
+  },"20": {
     "doc": "Complex Numbers",
     "title": "Rules of manipulation",
     "content": "In addition to being an ordered set of two numbers, complex numbers need to follow certain rules of addition, multiplication, and conjugation. Addition . Adding two complex numbers is straightforward. Just add the real parts together and add the imaginary parts together. \\[z_1 = a + ib \\\\ z_2 = c + id \\\\ z_1 + z_2 = (a + c) + i(b + d)\\] Real multiplication . To multiply a complex number by a real number \\(r\\), you would just multiply each part by \\(r\\) . \\[rz = ra + irb\\] Negation . The negative of a complex number is obtained by multiplying it by \\(-1\\) that is negating the real and imaginary parts individually. \\[-z = -a - ib\\] Subtraction . Subtracting two complex numbers \\(z_1 - z_2\\) is the same as adding the first one to the negative of the second one \\(z_1 + (-z_2)\\). \\[z_1 - z_2 = (a - c) + i(b - d)\\] Complex Multiplication . We can actually figure out the rules of multiplying two complex numbers on our own if we use the real-imaginary representation. Assume we have two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). Let’s multiply these two numbers the same way we do for unknown variables in normal algebra, that is . \\[z_1 z_2 = (a + ib)(c + id) = ac + iad + ibc + i^2bd\\] From the definition of imaginary unit \\(i = \\sqrt{-1}\\) you can see that \\(i^2\\) is simply equal to \\(-1\\) which is a real number! Now let’s bundle up the real parts together and the imaginary parts together and come up with a more compact expression for multiplication . \\[z_1 z_2 = (ac - bd) + i(ad + bc)\\] Conjugation . Conjugation is a fancy name for when you negate the imaginary part of a complex number, that is you multiply the imaginary part by \\(-1\\). To show that a complex number is conjugated you would add an asterisk on the top right corner of the symbol. \\[z = a + ib \\rightarrow z^* = a - ib\\] As a result, if you conjugate a complex number twice you will get the original number . \\[(z^*)^* = z\\] ",
     "url": "/math/complex/#rules-of-manipulation",
     
     "relUrl": "/math/complex/#rules-of-manipulation"
-  },"18": {
+  },"21": {
     "doc": "Complex Numbers",
     "title": "Absolute Value",
     "content": "The absolute value of a complex number \\(z\\) tells us how big the complex number is. It is denoted by \\(|z|\\) and is defined as the square root of the multiplication of the complex number with its own conjugate. \\[|z| = \\sqrt{zz^*}\\] ",
     "url": "/math/complex/#absolute-value",
     
     "relUrl": "/math/complex/#absolute-value"
-  },"19": {
+  },"22": {
     "doc": "Complex Numbers",
     "title": "Practice Problems",
     "content": "1. Division: Figure out the expression for dividing two complex numbers. Solutions . ",
     "url": "/math/complex/#practice-problems",
     
     "relUrl": "/math/complex/#practice-problems"
-  },"20": {
+  },"23": {
     "doc": "Complex Numbers",
     "title": "Footnote",
     "content": ". | It might be tempting to think of a complex number as a vector and we will do that in later sections. However, they are not any ordinary vectors. For example the rules of multiplication are different for complex numbers from what you have seen with normal vectors in linear algebra. &#8617; . | . ",
     "url": "/math/complex/#footnote",
     
     "relUrl": "/math/complex/#footnote"
-  },"21": {
+  },"24": {
     "doc": "Home",
     "title": "Learn Quantum Computing on your own",
     "content": "What one fool can understand, another can. -Feynman . ",
     "url": "/#learn-quantum-computing-on-your-own",
     
     "relUrl": "/#learn-quantum-computing-on-your-own"
-  },"22": {
+  },"25": {
     "doc": "Home",
     "title": "Can I learn quantum computing?",
     "content": "Of course you can! Quantum mechanics is a 100-year-old theory. There is no reason you can’t learn it now in this century. With the right math toolkit you can learn any theory. After all, theories are made up by other people like you and me. Quantum computing is even simpler to grasp. You do not need the whole framework of quantum mechanics to understand quantum computing. Even if you’re in high school you can learn quantum computing. You just need the right mathematics. Basics of Complex numbers, linear algebra (matrices and vectors), and probability theory are enough to get started. The more mathematics you know the easier it gets. ",
     "url": "/#can-i-learn-quantum-computing",
     
     "relUrl": "/#can-i-learn-quantum-computing"
-  },"23": {
+  },"26": {
     "doc": "Home",
     "title": "Where to start",
     "content": "If you are at high school level or early college, you should start with the mathematics. I have made the mathematics as concise as possible. Learn the basics of complex numbers, linear algebra, and probability theory and then move on to the quantum computing section. Otherwise, if you are already familiar with the above three math subjects, you can just go ahead to the quantum computing section. Study the sections sequentially. You would not want to skip the initial sections as the concepts are used in later sections where the more specific topics are discussed. ",
     "url": "/#where-to-start",
     
     "relUrl": "/#where-to-start"
-  },"24": {
+  },"27": {
     "doc": "Home",
     "title": "Practice, Practice, Practice!",
     "content": "Just like a craftsman, you get better by doing it. Doing physics or math involves solving problems on your own with pen and paper. Mere Reading won’t do the trick, it would just create a mirage of understanding. There are selected problems at the end of each page. Try to solve them before jumping to the solutions. ",
     "url": "/#practice-practice-practice",
     
     "relUrl": "/#practice-practice-practice"
-  },"25": {
+  },"28": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"26": {
-    "doc": "Linear Algebra: Vectors",
-    "title": "Linear Algebra",
-    "content": "This is a very short introduction. Linear algebra is vast and you can get as much accurate as you want in definitions, proofs, and so on. That is not what we want to do here. You will learn the basic definitions and operations on vectors and matrices. These basics concepts are enough to get started with quantum computing. ",
-    "url": "/math/linalgebra/#linear-algebra",
-    
-    "relUrl": "/math/linalgebra/#linear-algebra"
-  },"27": {
-    "doc": "Linear Algebra: Vectors",
-    "title": "Vector",
-    "content": "A vector is an ordered set of numbers. For example \\(\\bm{v} = (-1, 0.5, 3)\\) is a vector.1 It contains three numbers which are also called the elements. A vector can have any number of elements. A vector with only one element is just a scalar (just a number). Column vs Row . There are two ways to list the elements of a vector. In a row . \\[\\bm{v} = \\begin{pmatrix} -1 &amp; 0.5 &amp; 3 \\end{pmatrix}\\] or in a column . \\[\\bm{u} = \\begin{pmatrix} -1 \\\\ 0.5 \\\\ 3 \\end{pmatrix}\\] The row vector \\(\\bm{v}\\) and the column vector \\(\\bm{u}\\) are considered to be different. That is why I used two different letters to represent them. There is an operation that relates these two to each other. It’s called transpose and is shown by T in the superscript. \\[\\bm{v}^T = \\bm{u} \\\\ \\bm{u}^T = \\bm{v} \\\\\\] The transpose of a column vector is a row vector and vice versa. If you transpose a vector twice, you get the same vector. \\[(\\bm{v}^T)^T = \\bm{v}\\] Scalar multiplication . You can multiply a vector by a scalar (which is just a number). For that, you would just need to multiply individual elements of the vector by that same scalar. \\[a\\bm{u} = \\begin{pmatrix} -a \\\\ 0.5a \\\\ 3a \\end{pmatrix}\\] ",
-    "url": "/math/linalgebra/#vector",
-    
-    "relUrl": "/math/linalgebra/#vector"
-  },"28": {
-    "doc": "Linear Algebra: Vectors",
-    "title": "Footnote",
-    "content": ". | A boldface variable \\(\\bm{v}\\) is usually used to denote a vector. Another way of denoting a vector is to put an arrow on top \\(\\overrightarrow{v}\\). I’m going to stick to the boldface notation. &#8617; . | . ",
-    "url": "/math/linalgebra/#footnote",
-    
-    "relUrl": "/math/linalgebra/#footnote"
   },"29": {
-    "doc": "Linear Algebra: Vectors",
-    "title": "Linear Algebra: Vectors",
-    "content": "Felix Bloch talking to Heisenberg on a walk Bloch: Space is simply the field of linear operators. Heisenberg: Nonsense, space is blue and birds fly through it. ",
-    "url": "/math/linalgebra/",
-    
-    "relUrl": "/math/linalgebra/"
-  },"30": {
-    "doc": "Mathematics",
-    "title": "Mathematics",
-    "content": "All the mathematics that you will need in quantum computing are covered in here. ",
-    "url": "/math/",
-    
-    "relUrl": "/math/"
-  },"31": {
-    "doc": "Quantum Algorithms",
-    "title": "Quantum Algorithms",
-    "content": " ",
-    "url": "/qcomputing/qalgorithm/",
-    
-    "relUrl": "/qcomputing/qalgorithm/"
-  },"32": {
     "doc": "Qubit",
     "title": "Qubit",
     "content": "A qubit is represented by a two-dimensional complex vector usually denoted by \\(|\\psi\\rangle\\). Historically \\(\\psi\\) is used as the wavefunction of a quantum particle like an electron or any other object that behaves quantum mechanically. ",
     "url": "/qcomputing/qubit/#qubit",
     
     "relUrl": "/qcomputing/qubit/#qubit"
-  },"33": {
+  },"30": {
     "doc": "Qubit",
     "title": "Ket and Bra",
     "content": "The \\(|\\rangle\\) is called a ket introduced by Paul Dirac. It’s a way of distinguishing a column vector \\(|v\\rangle\\) (ket) from its dual row vector \\(\\langle v|\\) (called bra). The state of the qubit, \\(|\\psi\\rangle\\), can be explicitly written as a two component column vector . \\[|\\psi\\rangle = \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix}\\] where \\(c_1\\) and \\(c_2\\) are complex numbers. The qubit can also be represented by its dual row vector . \\[\\langle\\psi| = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix}\\] These two representations are considered equal. ",
     "url": "/qcomputing/qubit/#ket-and-bra",
     
     "relUrl": "/qcomputing/qubit/#ket-and-bra"
-  },"34": {
+  },"31": {
     "doc": "Qubit",
     "title": "Inner product and normalization",
     "content": "Now, the elements of the state vector \\(c_1\\) and \\(c_2\\) cannot be any numbers as they are limited by the normalization condition. It is a postulate of quantum mechanics that the state of a qubit is normalized which means the magnitude of the state vector is unity. By definition the magnitude (or norm) of a complex vector \\(\\|\\psi\\|\\) is equal to the square root of its inner product with its dual row vector. \\[\\|\\psi\\| = \\sqrt{\\langle \\psi | \\cdot | \\psi \\rangle}\\] The inner product \\(\\langle \\psi | \\cdot | \\psi \\rangle\\) is often abbreviated as \\(\\langle \\psi | \\psi \\rangle\\). It is worth mentioning that the inner product is always defined between a bra and a ket. Hence, called bracket. We can write the inner product explicitly in terms of \\(c_1\\) and \\(c_2\\) . \\[\\langle \\psi | \\psi \\rangle = \\begin{pmatrix} c_1^* &amp; c_2^* \\end{pmatrix} \\begin{pmatrix} c_1 \\\\ c_2 \\end{pmatrix} = |c_1|^2 + |c_2|^2.\\] Again, the normalization dictates that \\(\\sqrt{\\langle\\psi|\\psi\\rangle}=1\\). In other words . \\[\\sqrt{|c_1|^2 + |c_2|^2} = 1.\\] ",
     "url": "/qcomputing/qubit/#inner-product-and-normalization",
     
     "relUrl": "/qcomputing/qubit/#inner-product-and-normalization"
-  },"35": {
+  },"32": {
     "doc": "Qubit",
     "title": "Rays",
     "content": "Let’s assume we have a qubit at a specific state \\(\\) . ",
     "url": "/qcomputing/qubit/#rays",
     
     "relUrl": "/qcomputing/qubit/#rays"
-  },"36": {
+  },"33": {
     "doc": "Qubit",
     "title": "Single Qubit Gates",
     "content": "Gates are operations that change the state of qubits. That is what quantum computing means. You compute by applying gates on your qubits. ",
     "url": "/qcomputing/qubit/#single-qubit-gates",
     
     "relUrl": "/qcomputing/qubit/#single-qubit-gates"
-  },"37": {
+  },"34": {
     "doc": "Qubit",
     "title": "Multiple Qubits",
     "content": "The . ",
     "url": "/qcomputing/qubit/#multiple-qubits",
     
     "relUrl": "/qcomputing/qubit/#multiple-qubits"
-  },"38": {
+  },"35": {
     "doc": "Qubit",
     "title": "Qubit",
     "content": "Here you will learn the mathematics of representing quantum information and quantum computing operations. ",
     "url": "/qcomputing/qubit/",
     
     "relUrl": "/qcomputing/qubit/"
-  },"39": {
+  },"36": {
     "doc": "Quantum Computing",
     "title": "Quantum Computing",
     "content": " ",
     "url": "/qcomputing/",
     
     "relUrl": "/qcomputing/"
+  },"37": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Linear Algebra",
+    "content": "This is a very short introduction. Linear algebra is vast and you can get as much accurate as you want in definitions, proofs, and so on. That is not what we want to do here. You will learn the basic definitions and operations on vectors and matrices. These basics concepts are enough to get started with quantum computing. ",
+    "url": "/math/linalgebra/#linear-algebra",
+    
+    "relUrl": "/math/linalgebra/#linear-algebra"
+  },"38": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Vector",
+    "content": "A vector is an ordered set of numbers. For example \\(\\bm{v} = (-1, 0.5, 3)\\) is a vector.1 It contains three numbers which are also called the elements. A vector can have any number of elements. A vector with only one element is just a scalar (just a number). Column vs Row . There are two ways to list the elements of a vector. In a row . \\[\\bm{v} = \\begin{pmatrix} -1 &amp; 0.5 &amp; 3 \\end{pmatrix}\\] or in a column . \\[\\bm{u} = \\begin{pmatrix} -1 \\\\ 0.5 \\\\ 3 \\end{pmatrix}\\] The row vector \\(\\bm{v}\\) and the column vector \\(\\bm{u}\\) are considered to be different. That is why I used two different letters to represent them. There is an operation that relates these two to each other. It’s called transpose and is shown by T in the superscript. \\[\\bm{v}^T = \\bm{u} \\\\ \\bm{u}^T = \\bm{v} \\\\\\] The transpose of a column vector is a row vector and vice versa. If you transpose a vector twice, you get the same vector. \\[(\\bm{v}^T)^T = \\bm{v}\\] Scalar multiplication . You can multiply a vector by a scalar (which is just a number). For that, you would just need to multiply individual elements of the vector by that same scalar. \\[a\\bm{u} = \\begin{pmatrix} -a \\\\ 0.5a \\\\ 3a \\end{pmatrix}\\] ",
+    "url": "/math/linalgebra/#vector",
+    
+    "relUrl": "/math/linalgebra/#vector"
+  },"39": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Footnote",
+    "content": ". | A boldface variable \\(\\bm{v}\\) is usually used to denote a vector. Another way of denoting a vector is to put an arrow on top \\(\\overrightarrow{v}\\). I’m going to stick to the boldface notation. &#8617; . | . ",
+    "url": "/math/linalgebra/#footnote",
+    
+    "relUrl": "/math/linalgebra/#footnote"
   },"40": {
+    "doc": "Linear Algebra: Vectors",
+    "title": "Linear Algebra: Vectors",
+    "content": "Felix Bloch talking to Heisenberg on a walk Bloch: Space is simply the field of linear operators. Heisenberg: Nonsense, space is blue and birds fly through it. ",
+    "url": "/math/linalgebra/",
+    
+    "relUrl": "/math/linalgebra/"
+  },"41": {
+    "doc": "Mathematics",
+    "title": "Mathematics",
+    "content": "All the mathematics that you will need in quantum computing are covered in here. ",
+    "url": "/math/",
+    
+    "relUrl": "/math/"
+  },"42": {
+    "doc": "Quantum Algorithms",
+    "title": "Quantum Algorithms",
+    "content": " ",
+    "url": "/qcomputing/qalgorithm/",
+    
+    "relUrl": "/qcomputing/qalgorithm/"
+  },"43": {
+    "doc": "Normalized wave function",
+    "title": "Normalized wave function stays normalized",
+    "content": "How do we know if the wave function stays normalized as it evolves in time? 1 . Solution The answer is in the Schrodinger equation which describes the time evolution of the wave function. Imagine a particle with the wave function \\(\\psi(x, t)\\) in a one-dimensional world with potential energy \\(V(x)\\). The Schrodinger equation for this particle is . \\[i\\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi}{\\partial x^2} + V\\psi.\\] Now, let’s see what happens if we take the total derivative of the norm of the wave function \\(\\int\\vert\\psi\\vert^2 dx\\) with respect to time which is equivalent to . \\[\\frac{d}{dt}\\int_{-\\infty}^{\\infty}|\\psi|^2 dx = \\int_{-\\infty}^{\\infty}\\frac{\\partial}{\\partial t}|\\psi(x, t)|^2 dx.\\] Since \\(\\vert\\psi\\vert^2 = \\psi^*\\psi\\), we can use the product rule to write the integrand as . \\[\\frac{\\partial}{\\partial t} |\\psi|^2 = \\frac{\\partial\\psi^*}{\\partial t}\\psi + \\psi^* \\frac{\\partial\\psi}{\\partial t}.\\] From the Schrodinger equation and its complex conjugate we know . \\[i\\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi}{\\partial x^2} + V\\psi,\\] \\[-i\\hbar \\frac{\\partial \\psi^*}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\psi^*}{\\partial x^2} + V\\psi^*.\\] Using this we can rewrite the integrand as . \\[\\frac{\\partial}{\\partial t} |\\psi|^2 = \\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial^2\\psi^*}{\\partial x^2}\\psi - \\psi^*\\frac{\\partial^2\\psi}{\\partial x^2}\\bigg).\\] Let’s add and subtract \\((\\partial\\psi^*/\\partial_x)(\\partial\\psi/\\partial_x)\\) so that the right hand side becomes . \\[\\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial^2\\psi^*}{\\partial x^2}\\psi + \\frac{\\partial\\psi^*}{\\partial x}\\frac{\\partial\\psi}{\\partial x} - \\frac{\\partial\\psi^*}{\\partial x}\\frac{\\partial\\psi}{\\partial x} - \\psi^*\\frac{\\partial^2\\psi}{\\partial x^2}\\bigg).\\] Now it’s easy to see that we can factor out a partial derivative with respect to \\(x\\) . \\[\\frac{-i\\hbar}{2m}\\frac{\\partial}{\\partial x}\\bigg(\\frac{\\partial\\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial\\psi}{\\partial x}\\bigg).\\] Therefore, the integral is simply evaluated as . \\[\\int_{-\\infty}^{\\infty}\\frac{\\partial}{\\partial t}|\\psi|^2 dx = \\frac{-i\\hbar}{2m}\\bigg(\\frac{\\partial\\psi^*}{\\partial x}\\psi - \\psi^*\\frac{\\partial\\psi}{\\partial x}\\bigg)\\bigg|_{-\\infty}^{\\infty}.\\] The wave function \\(\\psi(x, t)\\) should approach zero in the limit \\(x\\rightarrow\\pm\\infty\\) in order to be square integrable and normalizable. As a result, the right hand side amounts to zero. Therefore, the time derivative of the norm is zero, . \\[\\frac{d}{dt}\\int_{-\\infty}^{\\infty}|\\psi|^2 dx = 0,\\] which means that if the wave function is normalized, it stays normalized as it evolves via the Schrodinger equation. | Of course we are assuming that the wave function is not being measured as it evolves. &#8617; . | . ",
+    "url": "/qmechanics/problems/normalized.html#normalized-wave-function-stays-normalized",
+    
+    "relUrl": "/qmechanics/problems/normalized.html#normalized-wave-function-stays-normalized"
+  },"44": {
+    "doc": "Normalized wave function",
+    "title": "Normalized wave function",
+    "content": " ",
+    "url": "/qmechanics/problems/normalized.html",
+    
+    "relUrl": "/qmechanics/problems/normalized.html"
+  },"45": {
     "doc": "Complex Numbers Solutions",
     "title": "Solutions to Complex Numbers",
     "content": "1. Division: Figure out the expression for dividing two complex numbers. Assume two complex numbers \\(z_1 = a + ib\\) and \\(z_2 = c + id\\). We want to figure out how to divide \\(z_1\\) by \\(z_2\\). First, we multiply both by \\(z_2^*\\). That won’t change the ratio . \\[\\frac{z_1}{z_2} = \\frac{z_1z_2^*}{z_2z_2^*}.\\] Notice that the denominator is just a real number \\(z_2z_2^* = |z_2|^2 = c^2 + d^2\\). So dividing by \\(|z_2|^2\\) is just like a scalar multiplication by \\(1/|z_2|^2\\). Therefore, we just need to calculate \\(z_1z_2^*\\). \\[z_1z_2^* = (ac + bd) + i(-ad + bc)\\] Finally, rescaling this by \\(1/(c^2 + d^2)\\) leads us to the final expression for division . \\[\\frac{z_1}{z_2} = \\frac{1}{c^2 + d^2} [(ac + bd) + i(-ad + bc)]\\] ",
     "url": "/math/complex/sol.html#solutions-to-complex-numbers",
     
     "relUrl": "/math/complex/sol.html#solutions-to-complex-numbers"
-  },"41": {
+  },"46": {
     "doc": "Complex Numbers Solutions",
     "title": "Complex Numbers Solutions",
     "content": " ",
